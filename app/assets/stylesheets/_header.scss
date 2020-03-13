@@ -1,0 +1,20 @@
+.header{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1.5rem;
+  &__left{
+    &__logo{
+      .logo{
+        margin: 0 1rem 1.2rem 0;
+      }
+    }
+  }
+  &__right{
+    &__list{
+      display: flex;
+      li{
+        margin-right: 3rem;
+      }
+    }
+  }
+}

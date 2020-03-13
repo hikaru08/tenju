@@ -1,0 +1,27 @@
+.header
+  .header__left
+    = link_to root_path, class: 'header__left__logo' do
+      = image_tag 'logo.png', alt: 'ロゴ', size: '55x55', class: 'logo'
+      = image_tag 'logo_text.png', alt: 'ロゴ', size: '100x60', class: 'logo_text'
+  .header__right
+    %ul.header__right__list
+      %li
+        = link_to root_recovery_path do
+          遺品整理
+      %li
+        = link_to root_cleaning_path do
+          家財整理
+      %li
+        = link_to root_lifesupport_path do
+          生活支援
+      %li
+        = link_to root_performance_path do
+          実績紹介
+      %li
+        = link_to root_company_path do
+          会社概要
+      %li
+        = link_to root_info_path do
+          お問い合わせ
+
+
