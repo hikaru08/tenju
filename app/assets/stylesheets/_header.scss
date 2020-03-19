@@ -6,8 +6,9 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 2rem 1.5rem;
+  border-bottom: 2px solid orange;
   &__left{
+    margin-top: 1rem;
     &__logo{
       .logo{
         margin: 0 1rem 1.2rem 0;
@@ -15,6 +16,25 @@
     }
   }
   &__right{
+    &__call{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 3rem;
+      font-weight: bold;
+      img{
+        height: 48px;
+        width: 48px;
+      }
+      p{
+        color: darkorange;
+        margin: 0 0 0 0.5rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
+      }
+      span{
+        line-height: 3.3rem;
+      }
+    }
     &__list{
       display: flex;
       margin: 0 0 1rem 0;
@@ -25,6 +45,7 @@
         margin-right: 2.5rem;
         font-size: 1rem;
         font-weight: 600;
+        font-family: "-apple-system", 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
         a::after{
           position: absolute;
           content: '';
