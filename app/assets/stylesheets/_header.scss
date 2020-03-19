@@ -1,4 +1,9 @@
 .header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 2rem 1.5rem;
@@ -12,8 +17,43 @@
   &__right{
     &__list{
       display: flex;
-      li{
-        margin-right: 3rem;
+      margin: 0 0 1rem 0;
+      padding: 0 11rem 0 0;
+      position: relative;
+      li, .info-button{
+        position: relative;
+        margin-right: 2.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        a::after{
+          position: absolute;
+          content: '';
+          bottom: -0.5rem;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: orange;
+          transition: all 0.3s ease 0s;
+        }
+        a:hover::after{
+          width: 100%;
+        }
+      }
+      .info-button{
+        position: absolute;
+        right: 0;
+        top: -0.5rem;
+        padding: 0.5rem;
+        color: #fff;
+        border-radius: 0.6rem;
+        background-color: darkorange;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease 0s;
+      }
+      .info-button:hover{
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(-0.1875em);
+        opacity: .8;
       }
     }
   }

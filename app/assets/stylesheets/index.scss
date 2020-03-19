@@ -1,0 +1,53 @@
+.index{
+  margin-top: 98px;
+  &__container{
+    &__image{
+      position: relative;
+      img{
+        width: 100vw;
+      }
+      &__text-zone{
+        &__catch{
+          span{
+          }
+        }
+      }
+    }
+    &__step{
+      padding: 0 2rem;
+      &__title{
+        border-bottom: solid 2px orange;
+        margin-top: 3rem;
+        text-align: center;
+        span{
+          @include middle();
+        }
+      }
+      &__content{
+        margin-top: 3rem;
+        &__up, &__down{
+          margin-bottom: 2rem;
+          display: flex;
+          text-align: center;
+          &__first, &__second, &__third, &__fourth{
+            position: relative;
+            img{
+              width: 85%;
+              border-radius: 0.5rem;
+            }
+            .title-zone{
+              position: absolute;
+              bottom: 3rem;
+              left: 1rem;
+              span{
+                color: darkorange;
+                font-size: 1.5rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
