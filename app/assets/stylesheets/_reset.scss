@@ -3,7 +3,7 @@
 	TODO with the prefix, should I group by selector or property for weight savings?
 */
 html{
-	color:#000;
+	color: #545454;
 }
 /*
 	TODO remove settings on BODY since we can't namespace it.
@@ -122,7 +122,7 @@ select {
 }
 /*because legend doesn't inherit in IE */
 legend {
-	color:#000;
+	color: #545454;
 }
 
 /* YUI CSS Detection Stamp */
@@ -134,5 +134,5 @@ legend {
 }
 a{
 	text-decoration: none;
-	color: #000;
+	color: #545454;
 }
