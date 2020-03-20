@@ -14,7 +14,7 @@
       }
     }
     &__step{
-      padding: 0 2rem;
+      padding: 0 5rem;
       &__title{
         border-bottom: solid 2px orange;
         margin-top: 3rem;
@@ -32,16 +32,22 @@
           &__first, &__second, &__third, &__fourth{
             position: relative;
             img{
-              width: 85%;
               border-radius: 0.5rem;
+              width: 85%;
             }
             .title-zone{
               position: absolute;
+              background-color: #fff;
+              padding: 1rem 2rem;
               bottom: 3rem;
-              left: 1rem;
-              span{
+              left: 2rem;
+              .step{
                 color: darkorange;
-                font-size: 1.5rem;
+                font-size: 2rem;
+                font-weight: bold;
+              }
+              .title{
+                font-size: 1.8rem;
                 font-weight: bold;
               }
             }
