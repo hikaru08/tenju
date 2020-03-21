@@ -304,6 +304,77 @@
           }
         }
       }
+
+      &__case{
+        padding: 68px 0 0;
+
+        &__box{
+
+          &__left , &__right{
+
+            h4{
+              margin-top: 0;
+              margin-bottom: 20px;
+              padding: .5em 0;
+              background: darkorange;
+              color: #fff;
+              font-size: 1.2rem;
+              font-weight: bold;
+              text-align: center;
+            }
+
+            &__before{
+              margin-bottom: 50px;
+              position: relative;
+
+              img{
+                vertical-align: bottom;
+                max-width: 100%;
+              }
+            }
+
+            &__before:before{
+              position: absolute;
+              bottom: -55px;
+              right: 50%;
+              margin-right: -20px;
+              border: 20px solid transparent;
+              border-top: 20px solid #cfd8e7;
+              content: "";
+            }
+
+            &__after{
+              position: relative;
+              margin: 0;
+
+              img{
+                vertical-align: bottom;
+                max-width: 100%;
+              }
+            }
+
+            ul{
+              display: inline-block;
+              padding: 0;
+              margin-top: 0;
+
+              li{
+                margin: 20px 0 0;
+                font-size: 0.9rem;
+
+                span{
+                  background: orange;
+                  color: #fff;
+                  padding: 10px;
+                  display: inline-block;
+                  font-size: 0.9rem;
+                  margin-right: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -400,6 +471,34 @@
           &__right{
             width: 48%;
             margin-left: 2%;
+          }
+        }
+      }
+
+      &__case{
+
+        &__box{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          &__left, &__right{
+            margin: 0 5%;
+            padding: 40px 25px;
+            width: 40%;
+
+            ul{
+              display: flex;
+              flex-wrap: wrap;
+
+              li{
+                width: 50%;
+              }
+
+              li:last-child{
+                width: 100%;
+              }
+            }
           }
         }
       }
