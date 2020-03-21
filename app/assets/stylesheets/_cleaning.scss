@@ -1,0 +1,65 @@
+.cleaning_main {
+
+  &__photo {
+    height: 15rem;
+    width: 100%;
+    background-color: darkred;
+
+    &__title {
+      text-align: center;
+      background-color: orange;
+      position: absolute;
+      padding: 0 3rem 0 3rem;
+      left: 42%;
+      top: 11rem;
+    }
+  }
+}
+
+.cleaning_contents {
+  max-width: 1200px;
+  margin: 2rem auto;
+  
+  &__title {
+    text-align: center;
+    border-width: 0 0 3px 0;
+    border-style: solid;
+  }
+
+  &__container {
+    margin-top: 2rem;
+  }
+  &__photo {
+    width: 35rem;
+    height: 25rem;
+    background-image: url(message-image1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+  &__textbox {
+    position: absolute;
+    right: 12rem;
+    top: 32rem;
+
+    &__title {
+      border-width: 0 0 3px 0;
+      border-style: solid;
+      // border-bottom: orange;
+
+    }
+    &__description {
+      letter-spacing: 1px;
+    }
+  }
+
+  &__fee {
+
+    &__inner {
+
+    }
+  }
+  &__price {
+
+  }
+}
