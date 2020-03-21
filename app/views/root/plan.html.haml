@@ -1,1 +1,140 @@
 = render 'share/header'
+
+.plan
+  .plan__contents
+    .plan__contents__header
+      %h1 料金一覧
+
+    = render 'share/breadcrumb'
+
+    .plan__contents__body
+      .plan__contents__body__flow.inner
+        %h2 ご利用の流れ
+        .plan__contents__body__flow__box
+          %h3 無料お見積の流れ
+          %ul
+            %li
+              .image
+                = image_tag "logo.png"
+              %p.step
+                STEP
+                %span 01
+              %h4 お問い合わせ
+            %li
+              .image
+                = image_tag "logo.png"
+              %p.step
+                STEP
+                %span 02
+              %h4 現地にてお見積り
+            %li
+              .image
+                = image_tag "logo.png"
+              %p.step
+                STEP
+                %span 03
+              %h4 お見積りご提示
+            %li
+              .image
+                = image_tag "logo.png"
+              %p.step
+                STEP
+                %span 04
+              %h4 お申込み・作業日のご相談
+          %h3 作業（別日）の流れ
+          %ul
+            %li
+              .image
+                = image_tag "logo.png"
+              %p.step
+                STEP
+                %span 01
+              %h4 当日打ち合わせ
+            %li
+              .image
+                = image_tag "logo.png"
+              %p.step
+                STEP
+                %span 02
+              %h4 仕分け・分別・搬出・処分・軽清掃
+            %li
+              .image
+                = image_tag "logo.png"
+              %p.step
+                STEP
+                %span 03
+              %h4
+                作業完了をご確認後、
+                %br
+                  料金お支払
+      .plan__contents__body__fee.inner
+        %h3 参考料金
+        .plan__contents__body__fee__wrap
+          .plan__contents__body__fee__wrap__right
+            %p.plan__contents__body__fee__wrap__right__blue 見積り後の追加料金は一切ありません！
+            %p.plan__contents__body__fee__wrap__right__attention 追加作業が入った場合にはこの限りではありません
+            %p.plan__contents__body__fee__wrap__right__text 料金は、以下の3つの費用の合計により算出いたします。
+      .plan__contents__body__sum-price.inner
+        %dl
+          %dt 整理作業費
+          %dd 仕分け・運搬など
+        %dl
+          %dt 処分費
+          %dd 量がどの位あるか
+        %dl
+          %dt オプション作業費
+          %dd.right
+            ・消臭・消毒
+            %br ・ハウスクリーニング
+            %span　(必要あれば)
+        %p 費用合計
+      .plan__contents__body__reference.inner
+        %h3 整理作業費の参考価格
+        .plan__contents__body__reference__box
+          .plan__contents__body__reference__box__left
+            %table
+              %thead
+                %tr
+                  %th 広さ
+                  %th 作業員
+                  %th 料金
+              %tbody
+                %tr
+                  %td 1LDK
+                  %td 3名
+                  %td 80,000円（税別）～
+                %tr
+                  %td 2DK
+                  %td 3名
+                  %td 120,000円（税別）～
+                %tr
+                  %td 2LDK
+                  %td 4名
+                  %td 150,000円（税別）～
+                %tr
+                  %td 3DK
+                  %td 5名
+                  %td 180,000円（税別）～
+                %tr
+                  %td 3LDK
+                  %td 6名
+                  %td 200,000円（税別）～
+          .plan__contents__body__reference__box__right
+            %p.plan__contents__body__reference__box__right__text
+              ワンストップサービスにより低料金を実現することができます。ご予算の目安としてご覧ください。
+              %span.plan__contents__body__reference__box__right__text__caution
+                どのような作業が必要かに応じて金額は変更いたします。
+            %p.plan__contents__body__reference__box__right__text
+              %span.plan__contents__body__reference__box__right__text__caution
+                廃棄物処理代金は条例等により各市町村で金額が異なりますので、別途必要な場合があります。詳しくは当社までお問い合わせください。
+            .plan__contents__body__reference__box__right__payment
+              %h4
+                %span お支払い方法
+              %p.plan__contents__body__reference__box__right__payment__orangetext
+                現金払い・事前振込の他、
+                %br
+                  クレジットカードがご利用頂けます。
+              %p.plan__contents__body__reference__box__right__payment__available
+                %span ご利用可能なカード：
+                %span
+                  = image_tag "cardlist2.jpg"
