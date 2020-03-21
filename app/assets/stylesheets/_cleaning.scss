@@ -56,10 +56,35 @@
   &__fee {
 
     &__inner {
+      text-align: center;
+
+      span {
+        display: inline-block;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 28px 10px;
+        border-radius: 10px;
+        background: orange;
+        font-size: 1.8rem;
+      }
 
     }
   }
   &__price {
+    font-size: 3rem;
+    display: table;
+    margin: 0 auto 50px;
+    padding-left: 0.2em;
+    background: linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(255, 255, 0, 0.7) 80%);
+    color: darkorange;
+    font-weight: bold;
+    text-align: center;
+
+    .small{
+      font-size: 1.5rem;
+
+    }
 
   }
 }
