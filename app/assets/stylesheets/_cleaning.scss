@@ -15,7 +15,7 @@
       position: absolute;
       padding: 0 5rem 0 5rem;
       left: 42%;
-      top: 40%;
+      top: 37%;
     }
   }
 }
@@ -50,7 +50,7 @@
       border-bottom: 2px solid darkorange;
 
       span {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
     &__description {
@@ -118,7 +118,6 @@
         background: orange;
         color: #fff;
         font-size: 2rem;
-        font-weight: bold;
         text-align: center;
       }
       &__before {
