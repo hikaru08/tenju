@@ -1,1 +1,109 @@
 = render 'share/header'
+.index
+  .index__container
+    .index__container__image
+      = image_tag 'top_image.jpg', alt: 'PCを持った女性'
+      .index__container__image__text-zone
+        .index__container__image__text-zone__catch
+    .index__container__step
+      .index__container__step__title
+        %span ご利用の流れ
+      .index__container__step__content
+        .index__container__step__content__up
+          .index__container__step__content__up__first
+            = image_tag 'call.jpg', alt: '電話をする女性'
+            .title-zone
+              .title-zone__title-box
+                %span.step STEP1-
+                %span.title お問い合わせ
+              .title-zone__discription-box
+                %span
+                  = link_to root_info_path do
+                    ご相談・お見積り
+                %span
+                  フォーム、またはフリーコールにてご希望の要件をお伝えください。当社スタッフより原則２営業日以内にご連絡させて頂き、ご要望を承ります。
+          .index__container__step__content__up__second
+            = image_tag 'calc.jpg', alt: '計算をする女性'
+            .title-zone
+              .title-zone__title-box
+                %span.step STEP2-
+                %span.title お見積り
+              .title-zone__discription-box
+                %span
+                  当社スタッフが現地へお伺いさせていただきます。現場確認後、最終見積もりをご提示させて頂き、ご承諾いただければそのまま打ち合わせに移ります。
+        .index__container__step__content__down
+          .index__container__step__content__down__third
+            = image_tag 'meeting.jpg', alt: '会話をする女性' 
+            .title-zone
+              .title-zone__title-box
+                %span.step STEP3-
+                %span.title お打ち合わせ
+              .title-zone__discription-box
+                %span
+                  お客様の心に寄り添うため、事前のお打ち合わせにて詳細なご要望のヒアリングをさせて頂きます。お手間をとらせますが、ご協力頂きますようよろしくお願い申し上げます。
+          .index__container__step__content__down__fourth
+            = image_tag 'clean.jpg', alt: '計算をする女性'
+            .title-zone
+              .title-zone__title-box
+                %span.step STEP4-
+                %span.title 作業着手
+              .title-zone__discription-box
+                %span
+                  事前打ち合わせの内容をもとに、実際に作業を開始させていただきます。最後まで丁寧な作業を心がけておりますのでご安心ください。
+
+    .index__container__solve            
+      .index__container__solve__title
+        %span お客様へのお約束
+      .index__container__solve__content
+        .index__container__solve__content__list
+          .index__container__solve__content__list__inner
+            %span.title
+              親切
+            %span.discription
+              私たちは親切な仕事を心がけます。
+          .index__container__solve__content__list__inner
+            %span.title
+              丁寧
+            %span.discription
+              私たちは丁寧な仕事を心がけます。
+          .index__container__solve__content__list__inner
+            %span.title
+              安心
+            %span.discription
+              私たちは安心な仕事を心がけます。
+          .index__container__solve__content__list__inner
+            %span.title
+              安全
+            %span.discription
+              私たちは安全な仕事を心がけます。
+          .index__container__solve__content__list__inner
+            %span.title
+              朗らか
+            %span.discription
+              私たちは朗らかな仕事を心がけます。
+    .index__container__service
+      .index__container__service__title
+        %span サービスのご案内
+      .index__container__service__content
+        .index__container__service__content__menu
+          .index__container__service__content__menu__recovery
+            = image_tag 'family.jpg', alt: '語らう三世代家族'
+            %p.title
+              = fa_icon 'check-circle'
+              遺品整理
+            %span.discription
+              遺品はただの物ではありません。わたしたちは、お客様のニーズに合わせた親切・丁寧な対応を心がけています。
+          .index__container__service__content__menu__cleaning
+            = image_tag 'baggage.png', alt: '荷物を積んだ軽トラ'
+            %p.title
+              = fa_icon 'check-circle'
+              家財整理
+            %span.discription
+              生前整理、不用品整理など、身の回りのものを整理することで心も前向きに。
+          .index__container__service__content__menu__lifesupport
+            = image_tag 'support.jpg', alt: '家事をする女性'
+            %p.title
+              = fa_icon 'check-circle'
+              生活支援
+            %span.discription
+              普段のお買い物や家事全般を代行サポートいたします。

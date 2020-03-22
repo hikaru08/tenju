@@ -1,0 +1,135 @@
+.index{
+  margin-top: 98px;
+  &__container{
+    &__image{
+      position: relative;
+      img{
+        width: 100vw;
+      }
+      &__text-zone{
+        &__catch{
+          span{
+          }
+        }
+      }
+    }
+    &__step, &__service{
+      background-color: rgb(252, 245, 221);
+    }
+    &__step, &__solve, &__service{
+      padding: 0 5rem 2rem 5rem;
+      &__title{
+        border-bottom: solid 2px orange;
+        margin-top: 3rem;
+        text-align: center;
+        span{
+          @include middle();
+        }
+      }
+      &__content{
+        margin-top: 3rem;
+        &__up, &__down{
+          margin-bottom: 2rem;
+          display: flex;
+          text-align: center;
+          &__first, &__second, &__third, &__fourth{
+            position: relative;
+            margin: 0 1.5rem;
+            img{
+              border-radius: 1rem;
+              width: 100%;
+            }
+            .title-zone{
+              position: absolute;
+              background-color:rgba($color: #fff, $alpha: .8);
+              width: 100%;
+              height: 40%;
+              bottom: 0.3rem;
+              overflow-y: scroll;
+              border-radius: 0 0 1rem 0.8rem;
+              &__title-box{
+                border-bottom: orange solid 1px;
+                .step{
+                  color: darkorange;
+                  font-size: 1.8rem;
+                  font-weight: bold;
+                }
+                .title{
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                }
+              }
+              &__discription-box{
+                padding: 0 1rem;
+                text-align: left;
+                span{
+                  font-weight: bold;
+                  line-height: 1.8rem;
+                  a{
+                    color: darkorange;
+                    border-bottom: 2px solid orange;
+                  }
+                  a:hover{
+                    opacity: .8;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &__list{
+          &__inner{
+            margin-bottom: 0.5rem;
+            display: flex;
+            .title, .discription{
+              padding: 1rem 0;
+              display: block;
+              font-weight: bold;
+              border: solid 1px orange;
+              text-align: center;
+            }
+            .title{
+              color: #fff;
+              font-size: 1.5rem;
+              background-color: orange;
+              width: 35%;
+            }
+            .discription{
+              font-size: 1.2rem;
+              width: 65%;
+            }
+          }
+        }
+        &__menu{
+          display: flex;
+          &__recovery:hover, &__cleaning:hover, &__lifesupport:hover{
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+            transform: translateY(-0.1875em);
+            opacity: .8;
+          }
+          &__recovery, &__cleaning, &__lifesupport{
+            width: 33.3%;
+            background-color: #fff;
+            border-radius: 1rem;
+            padding: 1rem 1rem;
+            margin: 0 0.5rem;
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease 0s;
+            img{
+              width: 100%;
+            }
+            .title{
+              font-size: 1.5rem;
+              font-weight: bold;
+              text-align: center;
+              color: darkorange;
+            }
+            .discription{
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
