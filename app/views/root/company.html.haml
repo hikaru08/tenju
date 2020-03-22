@@ -1,25 +1,40 @@
 = render 'share/header'
 .company
-  .company__title
-    %h2 会社概要
-  .company__greeting
+  .company__photo
+    .company__photo__title
+      %h2 家財整理
+  .company__area__title
     %h2 社長挨拶
-    %p
-      我が社のホームページへようこそいらっしゃいました。
-      %br/
-      株式会社天授は２０２０年１月２７日に設立しました。
-      %br/
-      今日、６５歳以上の高齢者の人口は２０１９年９月１５日現在で
-      %br/
-      「３，５８８万人」と過去最多になり今後２０４０年には高齢化率は３５％を
-      %br/
-      超えると推計されています。
-      %br/
-      少子高齢化や核家族化が進み孤独死や自死が社会問題となる中、・・・
-  .conpany__content
-  .conpany__erea
-    %h2 サービス提供エリア
-    %p 大阪府
-    %p 滋賀県
+  .company__greeting
+    .company__greeting__content
+      %p
+        我が社のホームページへようこそいらっしゃいました。
+        %br/
+        株式会社天授は２０２０年１月２７日に設立しました。
+        %br/
+        今日、６５歳以上の高齢者の人口は２０１９年９月１５日現在で
+        %br/
+        「３，５８８万人」と過去最多になり今後２０４０年には高齢化率は３５％を
+        %br/
+        超えると推計されています。
+        %br/
+        少子高齢化や核家族化が進み孤独死や自死が社会問題となる中、・・・
+        %br/
+        %br/
+        %br/
+        %br/
+        代表取締役社長　天授　花恋
+    .company__greeting__photo
+      %p
+        = image_tag 'greeting.png'
+  .company__content
+  .company__area
+    .company__area__title
+      %h2 対応エリア
+    .company__area__block
+      %h3.company__area__block__ttl
+        滋賀県
+      %p.company_area__block__text
+        大津市、草津市、守山市、栗東市、野洲市、甲賀市、湖南市、彦根市、愛荘町、豊郷町、甲良町、多賀町 
   .company__google
     %iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.4671036208074!2d136.256188315604!3d35.24463346139871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003d4f7a3d00001%3A0x836474c40fe4cf13!2z44K944OV44OI44OQ44Oz44KvIOW9puagueWkp-WggO-8mOWPt-e3mg!5e0!3m2!1sja!2sjp!4v1584851191626!5m2!1sja!2sjp" frameborder="0")

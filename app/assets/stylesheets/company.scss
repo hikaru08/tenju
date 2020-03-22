@@ -1,15 +1,65 @@
 .company{
-  &__title{
-    text-align: center;
+  &__photo {
+    padding: 20px;              /* 余白指定 */
+    vertical-align:  middle;    /* 中央寄せ */ 
+    background:#ddd url(company) no-repeat center center;
+    background-size:cover;
+    &__title {
+      color: #fff;
+      text-align: center;
+      background-color: orange;
+      width: 150px;               /* 幅指定 */
+      vertical-align:  middle;    /* 中央寄せ */
+      margin: auto;  
+    }
   }
   &__greeting{
-
+    display: flex;
+    padding: 2em;
+    &__content{
+      margin: 1em;
+    }
+    &__photo{
+      img{
+        height: 20em;
+        border-radius: 20px;
+      }
+    }
   }
   &__content{
     
   }
-  &__erea{
-
+  &__area{
+    margin: 70px auto;
+      &__title {
+        text-align: center;
+        border-bottom: 3px solid darkorange;
+        margin-bottom: 30px;
+      }
+    
+      &__block {
+        font-size: 1.3rem;
+        line-height: 1.8;
+    
+        &__ttl {
+          margin: 0 0 20px;
+          font-size: 1.3rem;
+          position: relative;
+          padding-left: 1.5em;
+          font-weight: bold;
+        }
+        &__text {
+          margin-bottom: 2.0em;
+          font-size: 1rem;
+        }
+        &__ttl::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: orange;
+          content: "■";
+        }
+      }
   }
   &__google{
 
