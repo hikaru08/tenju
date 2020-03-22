@@ -53,7 +53,57 @@
 
     .index__container__solve            
       .index__container__solve__title
-        %span こんなお悩みを解決します
+        %span お客様へのお約束
       .index__container__solve__content
-        %ul.index__container__solve__content__list
-          %li
+        .index__container__solve__content__list
+          .index__container__solve__content__list__inner
+            %span.title
+              親切
+            %span.discription
+              私たちは親切な仕事を心がけます。
+          .index__container__solve__content__list__inner
+            %span.title
+              丁寧
+            %span.discription
+              私たちは丁寧な仕事を心がけます。
+          .index__container__solve__content__list__inner
+            %span.title
+              安心
+            %span.discription
+              私たちは安心な仕事を心がけます。
+          .index__container__solve__content__list__inner
+            %span.title
+              安全
+            %span.discription
+              私たちは安全な仕事を心がけます。
+          .index__container__solve__content__list__inner
+            %span.title
+              朗らか
+            %span.discription
+              私たちは朗らかな仕事を心がけます。
+    .index__container__service
+      .index__container__service__title
+        %span サービスのご案内
+      .index__container__service__content
+        .index__container__service__content__menu
+          .index__container__service__content__menu__recovery
+            = image_tag 'family.jpg', alt: '語らう三世代家族'
+            %p.title
+              = fa_icon 'check-circle'
+              遺品整理
+            %span.discription
+              遺品はただの物ではありません。わたしたちは、お客様のニーズに合わせた親切・丁寧な対応を心がけています。
+          .index__container__service__content__menu__cleaning
+            = image_tag 'baggage.png', alt: '荷物を積んだ軽トラ'
+            %p.title
+              = fa_icon 'check-circle'
+              家財整理
+            %span.discription
+              生前整理、不用品整理など、身の回りのものを整理することで心も前向きに。
+          .index__container__service__content__menu__lifesupport
+            = image_tag 'support.jpg', alt: '家事をする女性'
+            %p.title
+              = fa_icon 'check-circle'
+              生活支援
+            %span.discription
+              普段のお買い物や家事全般を代行サポートいたします。
