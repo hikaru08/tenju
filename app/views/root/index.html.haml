@@ -13,21 +13,47 @@
           .index__container__step__content__up__first
             = image_tag 'call.jpg', alt: '電話をする女性'
             .title-zone
-              %span.step STEP1-
-              %span.title お問い合わせ
+              .title-zone__title-box
+                %span.step STEP1-
+                %span.title お問い合わせ
+              .title-zone__discription-box
+                %span
+                  = link_to root_info_path do
+                    ご相談・お見積り
+                %span
+                  フォーム、またはフリーコールにてご希望の要件をお伝えください。当社スタッフより原則２営業日以内にご連絡させて頂き、ご要望を承ります。
           .index__container__step__content__up__second
             = image_tag 'calc.jpg', alt: '計算をする女性'
             .title-zone
-              %span.step STEP2-
-              %span.title お見積もり
+              .title-zone__title-box
+                %span.step STEP2-
+                %span.title お見積り
+              .title-zone__discription-box
+                %span
+                  当社スタッフが現地へお伺いさせていただきます。現場確認後、最終見積もりをご提示させて頂き、ご承諾いただければそのまま打ち合わせに移ります。
         .index__container__step__content__down
           .index__container__step__content__down__third
             = image_tag 'meeting.jpg', alt: '会話をする女性' 
             .title-zone
-              %span.step STEP3-
-              %span.title お打ち合わせ
+              .title-zone__title-box
+                %span.step STEP3-
+                %span.title お打ち合わせ
+              .title-zone__discription-box
+                %span
+                  お客様の心に寄り添うため、事前のお打ち合わせにて詳細なご要望のヒアリングをさせて頂きます。お手間をとらせますが、ご協力頂きますようよろしくお願い申し上げます。
           .index__container__step__content__down__fourth
             = image_tag 'clean.jpg', alt: '計算をする女性'
             .title-zone
-              %span.step STEP4-
-              %span.title 現場確認・着手
+              .title-zone__title-box
+                %span.step STEP4-
+                %span.title 作業着手
+              .title-zone__discription-box
+                %span
+                  事前打ち合わせの内容をもとに、実際に作業を開始させていただきます。最後まで丁寧な作業を心がけておりますのでご安心ください。
+
+    .index__container__solve            
+      .index__container__solve__title
+        %span こんなお悩みを解決します
+      .index__container__solve__content
+        %ul.index__container__solve__content__list
+          %li
