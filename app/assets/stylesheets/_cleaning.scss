@@ -1,0 +1,406 @@
+@media screen and (min-width: 1024px) {
+  .cleaning_main {
+
+    &__photo {
+      height: 15rem;
+      width: 100%;
+      position: relative;
+
+      img {
+        height: 15rem;
+        width: 100%;
+      }
+
+
+      &__title {
+        color: #fff;
+        text-align: center;
+        background: rgba(255, 165, 0, 0.7);
+        position: absolute;
+        padding: 0 8rem 0 8rem;
+        left: 37%;
+        top: 35%;
+      }
+    }
+  }
+
+  .cleaning_contents {
+    max-width: 1200px;
+    margin: 2rem auto;
+
+    &__title {
+      text-align: center;
+      border-bottom: 3px solid orange;
+
+    }
+
+    &__container {
+      margin-top: 2rem;
+      position: relative;
+
+      &__photo {
+
+        img {
+          width: 35rem;
+          height: 25rem;
+        }
+      }
+      &__textbox {
+        position: absolute;
+        right: 5%;
+        top: 12%;
+
+        &__title {
+          border-bottom: 2px solid darkorange;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+        &__description {
+          letter-spacing: 1px;
+        }
+        &__description_resp {
+          display: none;
+        }
+      }
+    }
+    &__fee {
+
+      &__inner {
+        text-align: center;
+
+        span {
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          max-width: 480px;
+          margin: 0 auto;
+          padding: 28px 10px;
+          border-radius: 10px;
+          background: orange;
+          font-size: 2rem;
+          color: #fff;
+        }
+        span::before {
+          bottom: -50px;
+          border: 25px solid transparent;
+          border-top: 25px solid orange;
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          content: "";
+        }
+
+      }
+    }
+    &__price {
+      font-size: 3rem;
+      display: table;
+      margin: 20px auto 50px;
+      padding-left: 0.2em;
+      background: linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(255, 255, 0, 0.7) 80%);
+      color: darkorange;
+      font-weight: bold;
+      text-align: center;
+
+      .small{
+        font-size: 1.5rem;
+      }
+    }
+    &__casebox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__inner {
+        margin: 0 5%;
+        padding: 40px 25px;
+        width: 40%;
+
+        h3 {
+          margin-bottom: 20px;
+          padding: .5em 0;
+          background: orange;
+          color: #fff;
+          font-size: 2rem;
+          text-align: center;
+        }
+        &__before {
+          margin-bottom: 50px;
+          position: relative;
+
+          img {
+            vertical-align: bottom;
+            max-width: 100%;
+          }
+        }
+        &__before::before {
+          position: absolute;
+          bottom: -55px;
+          right: 50%;
+          margin-right: -20px;
+          border: 20px solid transparent;
+          border-top: 20px solid orange;
+          content: "";
+          }
+        &__before::after {
+          font-size: 1.3rem;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 0.5em;
+          color: #fff;
+          background: #666;
+          content: "Before";
+          letter-spacing: 0.1em;
+        }
+        &__after {
+          position: relative;
+
+          img {
+            vertical-align: bottom;
+            max-width: 100%;
+          }
+        }
+        &__after::after {
+          font-size: 1.3rem;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 0.5em;
+          color: #fff;
+          background: orange;
+          content: "After";
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+  }
+
+  .cleaning_area {
+    margin: 70px auto;
+
+    &__title {
+      text-align: center;
+      border-bottom: 3px solid darkorange;
+      margin-bottom: 30px;
+    }
+
+    &__block {
+      font-size: 1.3rem;
+      line-height: 1.8;
+
+      &__ttl {
+        margin: 0 0 20px;
+        font-size: 1.3rem;
+        position: relative;
+        padding-left: 1.5em;
+        font-weight: bold;
+      }
+      &__text {
+        margin-bottom: 2.0em;
+        font-size: 1rem;
+      }
+      &__ttl::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: orange;
+        content: "■";
+      }
+    }
+  }
+  .inner {
+    width: 92%;
+    max-width: 1024px;
+  }
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 1023px) {
+  .cleaning_main {
+
+    &__photo{
+      width: 100%;
+      position: relative;
+      background: orange;
+      height: 8rem;
+
+      img {
+      width: 100%;
+      height: 8rem;
+      opacity: .2;
+    }
+      &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1rem;
+        position: absolute;
+        left: 36%;
+        top: 21%;
+        color:  #fff;
+      }
+    }
+  }
+
+  .cleaning_contents {
+    max-width: 600px;
+    margin: 2rem auto;
+
+    &__title {
+      text-align: center;
+      border-bottom: 3px solid orange;
+
+    }
+
+    &__container {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      &__photo {
+
+        img {
+          width: 100%;
+        }
+      }
+      &__textbox {
+        margin-top: 1rem;
+
+        &__title {
+          border-bottom: 2px solid darkorange;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+        &__description {
+          display: none;
+        }
+        &__description_resp {
+          letter-spacing: 1px;
+        }
+      }
+    }
+    &__fee {
+
+      &__inner {
+        text-align: center;
+
+        span {
+          position: relative;
+          display: inline-block;
+          width: 85%;
+          max-width: 480px;
+          margin: 0 auto;
+          padding: 18px 7px;
+          border-radius: 10px;
+          background: orange;
+          font-size: 1.5rem;
+          color: #fff;
+        }
+        span::before {
+          bottom: -50px;
+          border: 25px solid transparent;
+          border-top: 25px solid orange;
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          content: "";
+        }
+
+      }
+    }
+    &__price {
+      font-size: 2rem;
+      display: table;
+      margin: 20px auto 50px;
+      padding-left: 0.2em;
+      background: linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(255, 255, 0, 0.7) 80%);
+      color: darkorange;
+      font-weight: bold;
+      text-align: center;
+
+      .small{
+        font-size: .7rem;
+      }
+    }
+    &__casebox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    
+      &__inner {
+        margin: 0 5%;
+        padding: 40px 25px;
+        width: 92%;
+
+        h3 {
+          margin-bottom: 20px;
+          padding: .5em 0;
+          background: orange;
+          color: #fff;
+          font-size: 1rem;
+          text-align: center;
+        }
+        &__before {
+          margin-bottom: 50px;
+          position: relative;
+
+          img {
+            vertical-align: bottom;
+            max-width: 100%;
+          }
+        }
+        &__before::before {
+          position: absolute;
+          bottom: -55px;
+          right: 50%;
+          margin-right: -20px;
+          border: 20px solid transparent;
+          border-top: 20px solid orange;
+          content: "";
+          }
+        &__before::after {
+          font-size: 1.3rem;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 0.5em;
+          color: #fff;
+          background: #666;
+          content: "Before";
+          letter-spacing: 0.1em;
+        }
+        &__after {
+          position: relative;
+
+          img {
+            vertical-align: bottom;
+            max-width: 100%;
+          }
+        }
+        &__after::after {
+          font-size: 1.3rem;
+          position: absolute;
+          right: 0;
+          bottom: -2rem;
+          left: 0;
+          padding: 0.5em;
+          color: #fff;
+          background: orange;
+          content: "After";
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+  }
+}
