@@ -14,14 +14,22 @@
             = image_tag 'call.jpg', alt: '電話をする女性'
             .title-zone
               .title-zone__title-box
-                %span.step STEP1-
-                %span.title お問い合わせ
+                %span.step
+                  STEP1-
+                %span.title
+                  お問い合わせ
               .title-zone__discription-box
                 %span
                   = link_to root_info_path do
                     ご相談・お見積り
                 %span
                   フォーム、またはフリーコールにてご希望の要件をお伝えください。当社スタッフより原則２営業日以内にご連絡させて頂き、ご要望を承ります。
+          .index__container__step__content-responsive
+            %span
+              = link_to root_info_path do
+                ご相談・お見積り
+            %span
+              フォーム、またはフリーコールにてご希望の要件をお伝えください。当社スタッフより原則２営業日以内にご連絡させて頂き、ご要望を承ります。
           .index__container__step__content__up__second
             = image_tag 'calc.jpg', alt: '計算をする女性'
             .title-zone
@@ -31,6 +39,9 @@
               .title-zone__discription-box
                 %span
                   当社スタッフが現地へお伺いさせていただきます。現場確認後、最終見積もりをご提示させて頂き、ご承諾いただければそのまま打ち合わせに移ります。
+          .index__container__step__content-responsive
+            %span
+              当社スタッフが現地へお伺いさせていただきます。現場確認後、最終見積もりをご提示させて頂き、ご承諾いただければそのまま打ち合わせに移ります。
         .index__container__step__content__down
           .index__container__step__content__down__third
             = image_tag 'meeting.jpg', alt: '会話をする女性' 
@@ -40,7 +51,10 @@
                 %span.title お打ち合わせ
               .title-zone__discription-box
                 %span
-                  お客様の心に寄り添うため、事前のお打ち合わせにて詳細なご要望のヒアリングをさせて頂きます。お手間をとらせますが、ご協力頂きますようよろしくお願い申し上げます。
+                  お客様の心に寄り添うため、事前のお打ち合わせにて詳細なご要望のヒアリングをさせて頂きます。大切な時間ですので、ご協力よろしくお願い申し上げます。
+          .index__container__step__content-responsive
+            %span
+              お客様の心に寄り添うため、事前のお打ち合わせにて詳細なご要望のヒアリングをさせて頂きます。大切な時間ですので、ご協力よろしくお願い申し上げます。
           .index__container__step__content__down__fourth
             = image_tag 'clean.jpg', alt: '計算をする女性'
             .title-zone
@@ -50,6 +64,9 @@
               .title-zone__discription-box
                 %span
                   事前打ち合わせの内容をもとに、実際に作業を開始させていただきます。最後まで丁寧な作業を心がけておりますのでご安心ください。
+          .index__container__step__content-responsive
+            %span
+              事前打ち合わせの内容をもとに、実際に作業を開始させていただきます。最後まで丁寧な作業を心がけておりますのでご安心ください。
 
     .index__container__solve            
       .index__container__solve__title
@@ -58,43 +75,43 @@
         .index__container__solve__content__list
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
+            %span
               優良事業所として認定・有資格者が在籍
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
+            %span
               ご依頼者さまの心に寄り添う、きめ細やかさ
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
-              ほんの少しでもご遺族の深い悲しみの助けになりたいという想い
+            %span
+              ほんの少しでもご遺族の悲しみという想い
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
+            %span
               ご予算に合わせ、無駄を省き低料金になるようアドバイス
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
+            %span
               忙しくお時間のないご依頼者さまの負担を軽減
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
+            %span
               遠く離れたご家族の状況が知れる安心
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
+            %span
               女性スタッフの在籍・女性ならではの細やかな気配り
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
+            %span
               ご遺品の模索・分別がとにかく丁寧
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
+            %span
               一般廃棄物・産業廃棄物・古物商の許認可をもち法令遵守
           .index__container__solve__content__list__inner
             = fa_icon 'check'
-            %span.discription
+            %span
               経験豊富なスタッフが在籍
           
     .index__container__service
@@ -104,23 +121,26 @@
         .index__container__service__content__menu
           .index__container__service__content__menu__recovery
             = image_tag 'family.jpg', alt: '語らう三世代家族'
-            %p.title
-              = fa_icon 'check-circle'
-              遺品整理
+            = link_to root_recovery_path do
+              %p.title
+                = fa_icon 'check-circle'
+                遺品整理
             %span.discription
               遺品はただの物ではありません。わたしたちは、お客様のニーズに合わせた親切・丁寧な対応を心がけています。
           .index__container__service__content__menu__cleaning
             = image_tag 'baggage.png', alt: '荷物を積んだ軽トラ'
-            %p.title
-              = fa_icon 'check-circle'
-              家財整理
+            = link_to root_cleaning_path do
+              %p.title
+                = fa_icon 'check-circle'
+                家財整理
             %span.discription
               生前整理、不用品整理など、身の回りのものを整理することで心も前向きになれるお手伝いを致します。
           .index__container__service__content__menu__lifesupport
             = image_tag 'support.jpg', alt: '家事をする女性'
-            %p.title
-              = fa_icon 'check-circle'
-              生活支援
+            = link_to root_lifesupport_path do
+              %p.title
+                = fa_icon 'check-circle'
+                生活支援
             %span.discription
               お買い物の代行からお墓のお掃除代行まで、お客様のご要望にとことんお応えします。
 
@@ -133,9 +153,9 @@
             %ul.index__container__worries__content__inner__left__list
               %li 予算内だけで依頼したいので相談に乗って欲しい
               %li 遺品や不用品が多すぎて自分達だけでは整理できない
-              %li 子ども達に迷惑を掛けたくないので今のうちに整理したい
-              %li 重いものが運べないのでそれだけでもいいから助けて欲しい
-              %li 遠方に住んでいるので何度も実家に通い整理するのは難しい
+              %li 子どもに迷惑を掛けたくないので今の内に整理したい
+              %li 重いものが運べないのでそれだけでも手伝って欲しい
+              %li 遠方に住んでいて何度も実家に通い整理できない
               %li 大切な人との別れが辛く整理する気分になれない
               %li 家屋の解体や売却前に不用品と必要品の整理をしたい
               %li 賃貸で家賃がかかるので一日でも早く片付けたい
@@ -144,6 +164,41 @@
           .index__container__worries__content__inner__right
             .index__container__worries__content__inner__right__image
               = image_tag 'advice.jpg', alt: 'カウンセリングする女性'
+        .index__container__worries__content__inner-responsive
+          .index__container__worries__content__inner-responsive__image
+            = image_tag 'advice.jpg', alt: 'カウンセリングする女性'
+          %ul.index__container__worries__content__inner-responsive__list
+            %li
+              = fa_icon 'comment'
+              予算内だけで依頼したいので相談に乗って欲しい
+            %li
+              = fa_icon 'comment'
+              遺品や不用品が多すぎて自分達だけでは整理できない
+            %li
+              = fa_icon 'comment'
+              子どもに迷惑を掛けたくないので今の内に整理したい
+            %li
+              = fa_icon 'comment'
+              重いものが運べないのでそれだけでも手伝って欲しい
+            %li
+              = fa_icon 'comment'
+              遠方に住んでいて何度も実家に通い整理できない
+            %li
+              = fa_icon 'comment'
+              大切な人との別れが辛く整理する気分になれない
+            %li
+              = fa_icon 'comment'
+              家屋の解体や売却前に不用品と必要品の整理をしたい
+            %li
+              = fa_icon 'comment'
+              賃貸で家賃がかかるので一日でも早く片付けたい
+            %li
+              = fa_icon 'comment'
+              とにかく何から手をつけていいのか分からない
+            %li
+              = fa_icon 'comment'
+              男性には頼みにくい内容なので女性に対応して欲しい
+            
 
 
 
