@@ -1,0 +1,11 @@
+.breadcrumb{
+  width: 92%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+  .breadcrumb{
+    margin-bottom: 15px;
+    max-width: 1024px;
+  }
+}
