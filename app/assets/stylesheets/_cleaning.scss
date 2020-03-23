@@ -37,6 +37,7 @@
 
     &__container {
       margin-top: 2rem;
+      margin-bottom: 2rem;
       position: relative;
 
       &__photo {
@@ -46,10 +47,31 @@
           height: 25rem;
         }
       }
+  //家財整理版テキスト
       &__textbox {
         position: absolute;
-        right: 5%;
-        top: 12%;
+        right: 10%;
+        top: 0;
+
+        &__title {
+          border-bottom: 2px solid darkorange;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+        &__description {
+          letter-spacing: 1px;
+        }
+        &__description_resp {
+          display: none;
+        }
+      }
+  //生前整理版テキスト
+      &__textbox_before-birth {
+        position: absolute;
+        right: 10%;
+        top: 0;
 
         &__title {
           border-bottom: 2px solid darkorange;
@@ -271,6 +293,25 @@
           width: 100%;
         }
       }
+    //家財整理版テキスト
+      &__textbox_before-birth {
+        margin-top: 1rem;
+
+        &__title {
+          border-bottom: 2px solid darkorange;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+        &__description {
+          display: none;
+        }
+        &__description_resp {
+          letter-spacing: 1px;
+        }
+      }
+    //生前整理版テキスト
       &__textbox {
         margin-top: 1rem;
 
@@ -288,6 +329,7 @@
           letter-spacing: 1px;
         }
       }
+    
     }
     &__fee {
 
