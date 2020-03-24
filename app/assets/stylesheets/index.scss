@@ -319,6 +319,9 @@
           &__recovery, &__cleaning, &__lifesupport{
             width: 100%;
             margin: 0 0 2rem 0;
+            .title{
+              margin: 0.8rem;
+            }
           }
         }
         &__list{
