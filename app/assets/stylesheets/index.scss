@@ -18,6 +18,9 @@
     }
     &__step, &__solve, &__service, &__worries{
       padding: 0 5rem 2rem 5rem;
+      &__title:first-child{
+        margin-top: 0;
+      }
       &__title{
         border-bottom: solid 2px orange;
         margin-top: 3rem;
@@ -192,27 +195,30 @@
 
 /*レスポンシブデザイン*/
 @media screen and (max-width:1024px) {
-  .index__container{
-    &__step, &__solve, &__service, &__worries{
-      padding: 0 3.5rem 2rem 3.5rem;
-      &__content{
-        &__up, &__down{
-          margin-bottom: 1.5rem;
-          &__first, &__second, &__third, &__fourth{
-            margin: 0 1rem;
-            .title-zone{
-              &__title-box{
-                .step{
-                  font-size: 1.2rem;
+  .index{
+    margin-top: 60px;
+    &__container{
+      &__step, &__solve, &__service, &__worries{
+        padding: 0 3.5rem 2rem 3.5rem;
+        &__content{
+          &__up, &__down{
+            margin-bottom: 1.5rem;
+            &__first, &__second, &__third, &__fourth{
+              margin: 0 1rem;
+              .title-zone{
+                &__title-box{
+                  .step{
+                    font-size: 1.2rem;
+                  }
+                  .title{
+                    font-size: 1.2rem;
+                  }
                 }
-                .title{
-                  font-size: 1.2rem;
-                }
-              }
-              &__discription-box{
-                span{
-                  font-size: 0.9rem;
-                  line-height: 1rem;
+                &__discription-box{
+                  span{
+                    font-size: 0.9rem;
+                    line-height: 1rem;
+                  }
                 }
               }
             }
@@ -289,6 +295,7 @@
               border-radius: 0 2rem 2rem 0;
               height: 4rem;
               bottom: 2rem;
+              overflow-y: hidden;
               &__title-box{
                 border: none;
                 line-height: 4rem;

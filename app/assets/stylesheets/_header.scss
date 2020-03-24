@@ -79,3 +79,136 @@
     }
   }
 }
+
+/*レスポンシブデザイン*/
+.navi{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(252, 245, 221);
+  text-align: center;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+  ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    li{
+      font-size: 1.1em;
+      font-weight: bold;
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+      border-bottom: 1px dotted darkorange;
+      a{
+        display: block;
+        padding: 1em 0;
+      }
+      a:hover{
+        opacity: .7;
+      }
+    }
+    li:last-child{
+      padding-bottom: 0;
+    }
+  }
+}
+.active{
+  transform: translateY(0%);
+}
+
+.header-responsive{
+  display: none;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid orange;
+  &__left{
+    .logo{
+      position: relative;
+      .mark{
+        margin-bottom: 0.5rem;
+      }
+      img{
+        margin-right: 0.3rem;
+      }
+    }
+  }
+  &__right{
+    .toggle{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 3;
+      span{
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px darkorange;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        left: 6px;
+      }
+      span:nth-child(1){
+        top: 9px;
+      }
+      span:nth-child(2){
+        top: 18px;
+      }
+      span:nth-child(3){
+        top: 27px;
+      }
+    }
+    .active{
+      span:nth-child(1){
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      span:nth-child(2),span:nth-child(3){
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1024px){
+  .header{
+    display: none;
+  }
+  .header-responsive{
+    display: flex;
+  }
+}
+
+@media screen and (max-width:639px){
+  .header-responsive{
+    &__left{
+      .logo{
+        .mark{
+          height: 30px;
+          width: 30px;
+        }
+        .text{
+          height: 30px;
+          width: 60px;
+        }
+      }
+    }
+  }
+}

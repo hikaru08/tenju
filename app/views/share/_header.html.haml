@@ -29,4 +29,44 @@
           会社概要
       = link_to "ご相談・お見積り", root_info_path, class: "info-button"
 
+.navi
+  %ul
+    %li
+      = link_to root_path do
+        ホーム
+    %li
+      = link_to root_path do
+        ホーム
+    %li
+      = link_to root_recovery_path do
+        遺品整理
+    %li
+      = link_to root_cleaning_path do
+        家財整理
+    %li
+      = link_to root_lifesupport_path do
+        生活支援
+    %li
+      = link_to root_plan_path do
+        料金一覧
+    %li
+      = link_to root_performance_path do
+        実績紹介
+    %li
+      = link_to root_company_path do
+        会社概要
+    %li
+      = link_to root_info_path do
+        ご相談・お見積り
+.header-responsive
+  .header-responsive__left
+    = link_to root_path do
+      .logo
+        = image_tag 'logo.png', alt: 'ロゴ', height: '35', width: '35', class: "mark"
+        = image_tag 'logo_text.png', alt: 'ロゴ', height: '40', width: '80', class: "text"
 
+  .header-responsive__right
+    .toggle
+      %span
+      %span
+      %span
