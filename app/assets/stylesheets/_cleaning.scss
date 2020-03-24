@@ -293,6 +293,7 @@
 
     &__title {
       text-align: center;
+      font-size: 1.5rem;
       border-bottom: 3px solid orange;
 
     }
@@ -319,7 +320,7 @@
           text-align: center;
 
           span {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
           }
         }
         &__description {
@@ -416,63 +417,70 @@
         padding: 40px 25px;
         width: 92%;
 
-        h3 {
-          margin-bottom: 20px;
-          padding: .5em 0;
+        &__back{
           background: orange;
-          color: #fff;
-          font-size: 1rem;
           text-align: center;
-        }
-        &__before {
-          margin-bottom: 50px;
-          position: relative;
+          height: 10%;
+          padding: 5px 0 5px 0;
 
-          img {
-            vertical-align: bottom;
-            max-width: 100%;
+          span {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
           }
-        }
-        &__before::before {
-          position: absolute;
-          bottom: -55px;
-          right: 50%;
-          margin-right: -20px;
-          border: 20px solid transparent;
-          border-top: 20px solid orange;
-          content: "";
-          }
-        &__before::after {
-          font-size: 1.3rem;
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          padding: 0.5em;
-          color: #fff;
-          background: #666;
-          content: "Before";
-          letter-spacing: 0.1em;
-        }
-        &__after {
-          position: relative;
+          &__before {
+            margin-top: 6px;
+            margin-bottom: 50px;
+            position: relative;
 
-          img {
-            vertical-align: bottom;
-            max-width: 100%;
+            img {
+              vertical-align: bottom;
+              max-width: 100%;
+            }
           }
-        }
-        &__after::after {
-          font-size: 1.3rem;
-          position: absolute;
-          right: 0;
-          bottom: -2rem;
-          left: 0;
-          padding: 0.5em;
-          color: #fff;
-          background: orange;
-          content: "After";
-          letter-spacing: 0.1em;
+          &__before::before {
+            position: absolute;
+            bottom: -55px;
+            right: 50%;
+            margin-right: -20px;
+            border: 20px solid transparent;
+            border-top: 20px solid orange;
+            content: "";
+            }
+          &__before::after {
+            font-size: 1.3rem;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 0.5em;
+            color: #fff;
+            background: #666;
+            content: "Before";
+            letter-spacing: 0.1em;
+          }
+          &__after {
+            position: relative;
+
+            img {
+              vertical-align: bottom;
+              max-width: 100%;
+            }
+          }
+          &__after::after {
+            font-size: 1.3rem;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+            bottom: -2rem;
+            left: 0;
+            padding: 0.5em;
+            color: #fff;
+            background: orange;
+            content: "After";
+            letter-spacing: 0.1em;
+          }
         }
       }
     }
