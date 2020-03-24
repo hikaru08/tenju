@@ -1,5 +1,5 @@
 @media screen and (min-width: 1024px) {
-  .cleaning_main {
+  .service_main {
     margin-top: 6.1rem;
 
     &__photo {
@@ -25,7 +25,7 @@
     }
   }
 
-  .cleaning_contents {
+  .service_contents {
     max-width: 1200px;
     margin: 2rem auto;
 
@@ -70,7 +70,7 @@
   //生前整理版テキスト
       &__textbox_before-birth {
         position: absolute;
-        right: 10%;
+        right: 5%;
         top: 0;
 
         &__title {
@@ -204,7 +204,7 @@
     }
   }
 
-  .cleaning_area {
+  .service_area {
     margin: 70px auto;
 
     &__title {
@@ -245,7 +245,7 @@
 
 /*レスポンシブ*/
 @media screen and (max-width: 1023px) {
-  .cleaning_main {
+  .service_main {
 
     &__photo{
       width: 100%;
@@ -265,14 +265,14 @@
         flex-direction: column;
         font-size: 1rem;
         position: absolute;
-        left: 36%;
+        left: 22%;
         top: 21%;
         color:  #fff;
       }
     }
   }
 
-  .cleaning_contents {
+  .service_contents {
     max-width: 600px;
     margin: 2rem auto;
 
@@ -288,35 +288,20 @@
       flex-direction: column;
 
       &__photo {
+        max-width: 300px;
+        margin: 0 auto;
 
         img {
           width: 100%;
         }
       }
     //家財整理版テキスト
-      &__textbox_before-birth {
-        margin-top: 1rem;
-
-        &__title {
-          border-bottom: 2px solid darkorange;
-
-          span {
-            font-size: 1.5rem;
-          }
-        }
-        &__description {
-          display: none;
-        }
-        &__description_resp {
-          letter-spacing: 1px;
-        }
-      }
-    //生前整理版テキスト
       &__textbox {
         margin-top: 1rem;
 
         &__title {
           border-bottom: 2px solid darkorange;
+          text-align: center;
 
           span {
             font-size: 1.5rem;
@@ -327,6 +312,37 @@
         }
         &__description_resp {
           letter-spacing: 1px;
+          text-indent: 1rem;
+
+          p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    //生前整理版テキスト
+      &__textbox_before-birth {
+        margin-top: 1rem;
+
+        &__title {
+          border-bottom: 2px solid darkorange;
+          text-align: center;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+        &__description {
+          display: none;
+        }
+        &__description_resp {
+          letter-spacing: 1px;
+          text-indent: 1rem;
+
+          p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
         }
       }
     
