@@ -86,7 +86,7 @@
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: rgb(252, 245, 221);
+  background-color: #fffadc;
   text-align: center;
   width: 100%;
   transform: translateY(-100%);
@@ -131,13 +131,16 @@
   background-color: #fff;
   border-bottom: 2px solid orange;
   &__left{
+    position: relative;
     .logo{
-      position: relative;
       .mark{
-        margin-bottom: 0.5rem;
+        position: absolute;
+        top: 5px;
       }
-      img{
-        margin-right: 0.3rem;
+      .text{
+        position: absolute;
+        left: 40px;
+        top: 10px;
       }
     }
   }
@@ -193,22 +196,5 @@
   }
   .header-responsive{
     display: flex;
-  }
-}
-
-@media screen and (max-width:639px){
-  .header-responsive{
-    &__left{
-      .logo{
-        .mark{
-          height: 30px;
-          width: 30px;
-        }
-        .text{
-          height: 30px;
-          width: 60px;
-        }
-      }
-    }
   }
 }

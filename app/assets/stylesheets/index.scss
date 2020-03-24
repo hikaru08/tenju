@@ -4,7 +4,8 @@
     &__image{
       position: relative;
       img{
-        width: 100vw;
+        width: 100%;
+        vertical-align: bottom;
       }
       &__text-zone{
         &__catch{
@@ -14,16 +15,13 @@
       }
     }
     &__step, &__service{
-      background-color: rgb(252, 245, 221);
+      background-color: #fcfde7;
     }
     &__step, &__solve, &__service, &__worries{
       padding: 0 5rem 2rem 5rem;
-      &__title:first-child{
-        margin-top: 0;
-      }
       &__title{
         border-bottom: solid 2px orange;
-        margin-top: 3rem;
+        padding-top: 3rem;
         text-align: center;
         span{
           @include middle();
@@ -32,7 +30,7 @@
       &__content-responsive{
         display: none;
         background-color: #fff;
-        border-radius: 1rem;
+        border-radius: 0 0 1rem 1rem;
         padding: 2rem;
         span{
           font-weight: bold;
@@ -56,6 +54,7 @@
             img{
               border-radius: 1rem;
               width: 100%;
+              vertical-align: bottom;
             }
             .title-zone{
               position: absolute;
@@ -272,7 +271,7 @@
     &__step, &__solve, &__service, &__worries{
       padding: 0 1.5rem 1rem 1.5rem;
       &__title{
-        margin-top: 1rem;
+        padding-top: 1.5rem;
         span{
           font-size: 1.1rem;
         }
@@ -282,11 +281,12 @@
         margin-bottom: 2rem;
       }
       &__content{
+        margin-top: 1rem;
         &__up, &__down{
           &__first, &__second, &__third, &__fourth{
             margin: 0;
             img{
-              border-radius: 0;
+              border-radius: 1rem 1rem 0 0;
               opacity: .8;
             }
             .title-zone{
