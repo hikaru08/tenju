@@ -154,11 +154,7 @@
       vertical-align:  middle;    /* 中央寄せ */ 
       background:#ddd url(company) no-repeat center center;
       background-size:cover;
-    }
-    &__area{
       &__title {
-        font-size: 3em;
-        padding-top: 0.6em;
         color: #fff;
         text-align: center;
         background-color: orange;
@@ -167,6 +163,7 @@
         margin: auto;  
       }
     }
+   
     &__greeting{
       padding: 1.8em;
       &__content{
