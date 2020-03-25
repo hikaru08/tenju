@@ -1,5 +1,4 @@
 .index{
-  margin-top: 98px;
   &__container{
     &__image{
       position: relative;
@@ -195,7 +194,6 @@
 /*レスポンシブデザイン*/
 @media screen and (max-width:1024px) {
   .index{
-    margin-top: 60px;
     &__container{
       &__step, &__solve, &__service, &__worries{
         padding: 0 3.5rem 2rem 3.5rem;
