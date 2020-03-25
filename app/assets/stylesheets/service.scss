@@ -277,15 +277,14 @@
       opacity: .2;
     }
       &__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         font-size: 1.5rem;
         font-weight: bold;
         position: absolute;
-        left: 20%;
-        top: 35%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         color:  #fff;
       }
     }
