@@ -417,7 +417,33 @@
           }
         }
       }
-    
+
+      &__textbox-re {
+
+        &__title {
+          border-bottom: 2px solid darkorange;
+          text-align: center;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+
+        &__description {
+          display: none;
+        }
+      }
+
+      &__textbox-re-l {
+
+        &__description {
+          display: none;
+        }
+      }
+
+      &__photo-right {
+        display: none;
+      }
     }
     &__fee {
 
