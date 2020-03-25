@@ -1,4 +1,9 @@
 .header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   border-bottom: 2px solid orange;
@@ -69,7 +74,127 @@
       .info-button:hover{
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
         transform: translateY(-0.1875em);
+        opacity: .8;
       }
     }
+  }
+}
+
+/*レスポンシブデザイン*/
+.navi{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #fffadc;
+  text-align: center;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+  ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    li{
+      font-size: 1.1em;
+      font-weight: bold;
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+      border-bottom: 1px dotted darkorange;
+      a{
+        display: block;
+        padding: 1em 0;
+      }
+      a:hover{
+        opacity: .7;
+      }
+    }
+    li:last-child{
+      padding-bottom: 0;
+    }
+  }
+}
+.active{
+  transform: translateY(0%);
+}
+
+.header-responsive{
+  display: none;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid orange;
+  &__left{
+    position: relative;
+    .logo{
+      .mark{
+        position: absolute;
+        top: 5px;
+      }
+      .text{
+        position: absolute;
+        left: 40px;
+        top: 10px;
+      }
+    }
+  }
+  &__right{
+    .toggle{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 3;
+      span{
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px darkorange;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        left: 6px;
+      }
+      span:nth-child(1){
+        top: 9px;
+      }
+      span:nth-child(2){
+        top: 18px;
+      }
+      span:nth-child(3){
+        top: 27px;
+      }
+    }
+    .active{
+      span:nth-child(1){
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      span:nth-child(2),span:nth-child(3){
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1024px){
+  .header{
+    display: none;
+  }
+  .header-responsive{
+    display: flex;
   }
 }
