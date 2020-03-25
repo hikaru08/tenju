@@ -3,20 +3,21 @@
     margin-top: 6.1rem;
 
     &__photo {
-      height: 15rem;
+      height: 20rem;
       width: 100%;
       position: relative;
 
       img {
-        height: 15rem;
+        height: 100%;
         width: 100%;
+        object-fit: cover;
       }
 
 
       &__title {
         color: #fff;
         text-align: center;
-        background: rgba(255, 165, 0, 0.7);
+        background: rgba(255, 165, 0, 0.9);
         position: absolute;
         position: absolute;
         top: 50%;
