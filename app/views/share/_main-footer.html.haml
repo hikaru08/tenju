@@ -1,1 +1,30 @@
 .main-footer
+  .main-footer__top-btn
+    = link_to "▲" , "#wrap"
+  .main-footer__contents.inner
+    .main-footer__contents__logo-box
+      = link_to root_path do
+        = image_tag "logo.png" , size:"100x100" , class: 'logo'
+        = image_tag 'logo_text.png', size: '100x60' , class: 'logo_text'
+      .main-footer__contents__logo-box__proof
+        = image_tag "is.jpg" , class: 'proof'
+    %nav.main-footer__contents__nav
+      %ul.main-footer__contents__nav__list
+        %li.main-footer__contents__nav__list__item
+          = link_to "トップページ" , root_path
+        %li.main-footer__contents__nav__list__item
+          = link_to "遺品整理" , root_recovery_path
+        %li.main-footer__contents__nav__list__item
+          = link_to "家財整理" , root_cleaning_path
+        %li.main-footer__contents__nav__list__item
+          = link_to "生活支援" , root_lifesupport_path
+        %li.main-footer__contents__nav__list__item
+          = link_to "料金一覧" , root_plan_path
+        %li.main-footer__contents__nav__list__item
+          = link_to "実績紹介" , root_performance_path
+        %li.main-footer__contents__nav__list__item
+          = link_to "会社概要" , root_company_path
+        %li.main-footer__contents__nav__list__item
+          = link_to "ご相談・お見積り" , root_info_path
+  %p.main-footer__copyright
+    %small Copyright© tenju,Inc All rights reseaved.

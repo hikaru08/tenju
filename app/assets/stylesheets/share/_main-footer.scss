@@ -1,4 +1,168 @@
 .main-footer{
   position: relative;
-  border-top: 4px #38bdb4 solid;
+  border-top: 2px solid orange;
+
+  &__top-btn{
+    display: block;
+
+    a{
+      display: block;
+      padding: 15px 19px;
+      color: #fff;
+      background: orange;
+      font-size: 1rem;
+    }
+  }
+
+  &__contents{
+    width: 100%;
+
+    &__logo-box{
+
+      .logo{
+        margin: 0 1rem 0 0;
+      }
+
+      &__proof{
+
+        .proof{
+          vertical-align: bottom;
+          max-width: 100%;
+        }
+      }
+    }
+
+    &__nav{
+      list-style: none;
+
+      &__list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  &__copyright{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1025px){
+  .main-footer{
+    padding: 50px 0;
+
+    &__contents{
+      display: flex;
+
+      &__logo-box{
+        width: 30%;
+        margin-bottom: 50px;
+        margin:  auto;
+
+        &__proof{
+          margin-top: 50px;
+        }
+      }
+
+      &__nav{
+        width: 50%;
+        margin-bottom: 50px;
+        padding: 10% 0;
+
+        &__list{
+          flex-direction: column;
+          width: 100%;
+          height: 250px;
+
+          &__item{
+            width: 50%;
+            font-size: 1.1rem;
+            line-height: 3.5;
+
+            a{
+              font-weight: bold;
+              transition: color .3s;
+            }
+
+            a:before{
+              content: "-";
+              padding-right: 0.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .main-footer{
+
+    &__contents{
+  
+      &__logo-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+
+        &__proof{
+          margin-top: 0;
+          padding-left: 10px;
+          max-width: 25%;
+        }
+      }
+
+      &__nav{
+
+        &__list{
+          border-bottom: 1px #bbbfc0 solid;
+          border-left: 1px #bbbfc0 solid;
+
+          &__item{
+            width: 50%;
+            border-top: 1px #bbbfc0 solid;
+            border-right: 1px #bbbfc0 solid;
+            font-size: 1rem;
+
+            a{
+              display: block;
+              padding: 1em 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .main-footer{
+  
+    &__top-btn{
+      position: fixed;
+      right: 30px;
+      bottom: 250px;
+      z-index: 1000;
+    }
+
+    &__copyright{
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .main-footer{
+  
+    &__top-btn{
+      position: absolute;
+      top: -25px;
+      right: 30px;
+    }
+  }
 }
