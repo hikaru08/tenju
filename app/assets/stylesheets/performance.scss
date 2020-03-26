@@ -1,0 +1,120 @@
+.performance{
+  padding: 0 8em;
+  &__box{
+    position: relative;
+    margin: 2em 0;
+    padding: 25px 10px 7px;
+    border: solid 2px #FFC107;
+    span.box-title{
+    }
+    .box-ti{
+      padding: 0 50px 19px;
+      .tit{
+        font-size: 2.4rem;
+        line-height: 1.33333;
+        margin-bottom: 11px;
+      }
+      .sub{
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+        display: inline-block;
+      }
+    }
+    .box-bottom{
+      padding: 31px 50px 19px;
+      display: flex;
+      
+      .box-img{
+        margin-bottom: 15px;
+        display: flex;
+        position: relative;
+        img{
+          height: 20em;
+          // width: 47%;
+        }
+        .before{
+          .txt{
+            text-align: center;
+            color: #fff;
+            font-size: 1.7rem;
+            padding: 7px 0;
+            background: #bdb9b8;
+            border-radius: 5px;
+          }
+        }
+        .triangle{
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: solid 15px transparent;
+          border-right: solid 15px transparent;
+          border-bottom: solid 15px transparent;
+          border-left: solid 28px orange;
+          top: 10em;
+          left: 17em;
+        }
+        .after{
+          padding-left: 5em;
+          .txt{
+            text-align: center;
+            color: #fff;
+            font-size: 1.7rem;
+            padding: 7px 0;
+            background: orange;
+            opacity: 80%;
+            border-radius: 5px;
+          }
+        }
+      }
+      .box-price{
+        width: 377px;
+        padding-left: 2em;
+        padding-top: 2em;
+        .viewPC{
+          line-height: 2;
+          margin: -9px 0 25px;
+        }
+        table{
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+          th{
+            width: 56%;
+            vertical-align: middle;
+            text-align: left;
+            padding-bottom: 10px;
+            font-weight: 700;
+          }
+          td{
+            text-align: right;
+          }
+          th.btm{
+            border-top: 1px solid #d7d8d9;
+            padding-top: 8px;
+          }
+          td.btm{
+            font-size: 1.6em;
+            padding-top: 8px;
+            color: orangered;
+          }
+        }
+      }
+    }
+  }
+  &__box .box-title{
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 29px;
+    background: #FFC107;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  &__box p{
+    margin: 0; 
+    padding: 0;
+  }
+}
