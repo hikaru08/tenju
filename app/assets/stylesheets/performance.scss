@@ -1,120 +1,362 @@
-.performance{
-  padding: 0 8em;
-  &__box{
-    position: relative;
-    margin: 2em 0;
-    padding: 25px 10px 7px;
-    border: solid 2px #FFC107;
-    span.box-title{
+@media screen and (max-width:639px) {
+  /*スマホ用のcssを記述*/
+  .performance{
+    padding: 0 1em;
+    &__box{
+      padding: 0 1.1em;
+      position: relative;
+      margin: 2em 0;
+      border: solid 2px #FFC107;
+      span.box-title{
+      }
+      .box-ti{
+        .tit{
+          font-size: 0.8em;
+          line-height: 1.33333;
+          margin-bottom: 11px;
+        }
+        .sub{
+          font-size: 0.8em;
+          margin-bottom: 8px;
+          display: inline-block;
+        }
+      }
+      .box-bottom{
+        
+        .box-img{
+          margin-bottom: 30px;
+          display: flex;
+          position: relative;
+          img{
+            height: 10em;
+            width: 100%;
+          }
+          .before{
+            padding-right: 1.1em;
+            .txt{
+              text-align: center;
+              color: #fff;
+              font-size: 1rem;
+              padding: 7px 0;
+              background: #bdb9b8;
+              border-radius: 5px;
+            }
+          }
+          .triangle{
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-top: solid 15px transparent;
+            border-bottom: solid 15px transparent;
+            border-left: solid 15px orange;
+
+          }
+          .after{
+            padding-left: 1.1em;
+            .txt{
+              text-align: center;
+              color: #fff;
+              font-size: 1em;
+              padding: 7px 0;
+              background: orange;
+              opacity: 80%;
+              border-radius: 5px;
+            }
+          }
+        }
+        .box-price{
+          .viewPC{
+            line-height: 2;
+            margin: -9px 0 25px;
+            font-size: 0.8em;
+          }
+          table{
+            font-size: 0.8em;
+            margin: auto;
+            th{
+              width: 56%;
+              vertical-align: middle;
+              text-align: left;
+              padding-bottom: 10px;
+              font-weight: 700;
+            }
+            td{
+              text-align: right;
+            }
+            th.btm{
+              border-top: 1px solid #d7d8d9;
+              padding-top: 8px;
+            }
+            td.btm{
+              font-size: 1.6em;
+              color: orangered;
+            }
+          }
+        }
+      }
     }
-    .box-ti{
-      padding: 0 50px 19px;
-      .tit{
-        font-size: 2.4rem;
-        line-height: 1.33333;
-        margin-bottom: 11px;
-      }
-      .sub{
-        font-size: 1.6rem;
-        margin-bottom: 8px;
-        display: inline-block;
-      }
+    &__box .box-title{
+      position: absolute;
+      display: inline-block;
+      top: -2px;
+      left: -2px;
+      padding: 0 9px;
+      height: 43px;
+      line-height: 43px;
+      font-size: 17px;
+      background: #FFC107;
+      color: #ffffff;
+      font-weight: bold;
     }
-    .box-bottom{
-      padding: 31px 50px 19px;
-      display: flex;
-      
-      .box-img{
-        margin-bottom: 15px;
-        display: flex;
-        position: relative;
-        img{
-          height: 20em;
-          // width: 47%;
+    &__box p{
+      margin: 0; 
+      padding: 0;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width:640px) and (max-width:1023px) {
+  /*tablet用のcssを記述*/
+  .performance{
+    padding: 0 1em;
+    &__box{
+      padding: 0 1.1em;
+      position: relative;
+      margin: 2em 0;
+      border: solid 2px #FFC107;
+      span.box-title{
+      }
+      .box-ti{
+        .tit{
+          font-size: 1.6em;
+          line-height: 1.33333;
+          margin-bottom: 11px;
         }
-        .before{
-          .txt{
-            text-align: center;
-            color: #fff;
-            font-size: 1.7rem;
-            padding: 7px 0;
-            background: #bdb9b8;
-            border-radius: 5px;
-          }
-        }
-        .triangle{
-          position: absolute;
-          width: 0;
-          height: 0;
-          border-top: solid 15px transparent;
-          border-right: solid 15px transparent;
-          border-bottom: solid 15px transparent;
-          border-left: solid 28px orange;
-          top: 10em;
-          left: 17em;
-        }
-        .after{
-          padding-left: 5em;
-          .txt{
-            text-align: center;
-            color: #fff;
-            font-size: 1.7rem;
-            padding: 7px 0;
-            background: orange;
-            opacity: 80%;
-            border-radius: 5px;
-          }
+        .sub{
+          font-size: 1.6em;
+          margin-bottom: 8px;
+          display: inline-block;
         }
       }
-      .box-price{
-        width: 377px;
-        padding-left: 2em;
-        padding-top: 2em;
-        .viewPC{
-          line-height: 2;
-          margin: -9px 0 25px;
+      .box-bottom{
+        
+        .box-img{
+          margin-top: 1.1em;
+          margin-bottom: 30px;
+          display: flex;
+          position: relative;
+          img{
+            height: 20em;
+            width: 100%;
+          }
+          .before{
+            padding-right: 1.1em;
+            .txt{
+              text-align: center;
+              color: #fff;
+              font-size: 1.4em;
+              padding: 7px 0;
+              background: #bdb9b8;
+              border-radius: 5px;
+            }
+          }
+          .triangle{
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-top: solid 15px transparent;
+            border-bottom: solid 15px transparent;
+            border-left: solid 15px orange;
+
+          }
+          .after{
+            padding-left: 1.1em;
+            .txt{
+              text-align: center;
+              color: #fff;
+              font-size: 1.4em;
+              padding: 7px 0;
+              background: orange;
+              opacity: 80%;
+              border-radius: 5px;
+            }
+          }
         }
-        table{
-          font-size: 1.2rem;
-          margin-bottom: 5px;
-          th{
-            width: 56%;
-            vertical-align: middle;
-            text-align: left;
-            padding-bottom: 10px;
-            font-weight: 700;
-          }
-          td{
-            text-align: right;
-          }
-          th.btm{
-            border-top: 1px solid #d7d8d9;
-            padding-top: 8px;
-          }
-          td.btm{
+        .box-price{
+          .viewPC{
+            line-height: 2;
             font-size: 1.6em;
-            padding-top: 8px;
-            color: orangered;
+            padding: 1em 4em;
+          }
+          table{
+            font-size: 1.6em;
+            margin: auto;
+            th{
+              width: 56%;
+              vertical-align: middle;
+              text-align: left;
+              padding-bottom: 10px;
+              font-weight: 700;
+            }
+            td{
+              text-align: right;
+            }
+            th.btm{
+              border-top: 1px solid #d7d8d9;
+              padding-top: 8px;
+            }
+            td.btm{
+              font-size: 1.4em;
+              color: orangered;
+            }
           }
         }
       }
     }
+    &__box .box-title{
+      position: absolute;
+      display: inline-block;
+      top: -2px;
+      left: -2px;
+      padding: 0 9px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 29px;
+      background: #FFC107;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    &__box p{
+      margin: 0; 
+      padding: 0;
+    }
   }
-  &__box .box-title{
-    position: absolute;
-    display: inline-block;
-    top: -2px;
-    left: -2px;
-    padding: 0 9px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 29px;
-    background: #FFC107;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  &__box p{
-    margin: 0; 
-    padding: 0;
+}
+
+
+
+@media screen and (min-width:1024px) {
+
+  .performance{
+    padding: 0 8em;
+    &__box{
+      position: relative;
+      margin: 2em 0;
+      padding: 25px 10px 7px;
+      border: solid 2px #FFC107;
+      span.box-title{
+      }
+      .box-ti{
+        padding: 0 50px 19px;
+        .tit{
+          font-size: 1.6rem;
+          line-height: 1.33333;
+          margin-bottom: 11px;
+        }
+        .sub{
+          font-size: 1.6rem;
+          margin-bottom: 8px;
+          display: inline-block;
+        }
+      }
+      .box-bottom{
+        padding: 31px 1.2em 19px;
+        display: flex;
+        
+        .box-img{
+          margin-bottom: 15px;
+          display: flex;
+          position: relative;
+          img{
+            height: 20em;
+            // width: 47%;
+          }
+          .before{
+            
+            .txt{
+              text-align: center;
+              color: #fff;
+              font-size: 1.7rem;
+              padding: 7px 0;
+              background: #bdb9b8;
+              border-radius: 5px;
+            }
+          }
+          .triangle{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: solid 15px transparent;
+            border-right: solid 15px transparent;
+            border-bottom: solid 15px transparent;
+            border-left: solid 28px orange;
+            top: 10em;
+            left: 17em;
+          }
+          .after{
+            padding-left: 5em;
+            .txt{
+              text-align: center;
+              color: #fff;
+              font-size: 1.7rem;
+              padding: 7px 0;
+              background: orange;
+              opacity: 80%;
+              border-radius: 5px;
+            }
+          }
+        }
+        .box-price{
+          margin: 0 auto;
+          padding-left: 1.1em;
+          .viewPC{
+            line-height: 2;
+            margin: -9px 0 25px;
+            font-size: 1.4em;
+          }
+          table{
+            font-size: 1.4em;
+            th{
+              width: 56%;
+              vertical-align: middle;
+              text-align: left;
+              padding-bottom: 10px;
+              font-weight: 700;
+            }
+            td{
+              text-align: right;
+            }
+            th.btm{
+              border-top: 1px solid #d7d8d9;
+              padding-top: 8px;
+            }
+            td.btm{
+              font-size: 1.4em;
+              color: orangered;
+              border-top: 1px solid #d7d8d9;
+            }
+          }
+        }
+      }
+    }
+    &__box .box-title{
+      position: absolute;
+      display: inline-block;
+      top: -2px;
+      left: -2px;
+      padding: 0 9px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 29px;
+      background: #FFC107;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    &__box p{
+      margin: 0; 
+      padding: 0;
+    }
   }
 }
