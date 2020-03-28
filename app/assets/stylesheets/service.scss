@@ -66,7 +66,7 @@
           height: 25rem;
         }
       }
-  //家財整理版テキスト
+    //家財整理、生活支援版テキスト
       &__textbox {
         position: absolute;
         right: 10%;
@@ -148,6 +148,26 @@
         }
       }
     }
+    //生活支援サービス事例
+    &__examplebox {
+      max-width: 900px;
+      margin: 0 auto;
+      &__inner {
+        display: flex;
+
+        &__text {
+          font-size: 1.5rem;
+
+        }
+        &__text-right {
+          font-size: 1.5rem;
+          margin-left: 14rem;
+
+        }
+      }
+    }
+
+
     &__fee {
 
       &__inner {
