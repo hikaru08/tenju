@@ -46,7 +46,7 @@
         &__up, &__down{
           margin-bottom: 2rem;
           display: flex;
-          text-align: center;
+          justify-content: center;
           &__first, &__second, &__third, &__fourth{
             position: relative;
             margin: 0 1.5rem;
