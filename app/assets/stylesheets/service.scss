@@ -332,7 +332,7 @@
   }
 }
 
-/*レスポンシブ*/
+//レスポンシブ
 @media screen and (max-width: 1023px) {
   .service_main {
     margin-top: 60px;
@@ -463,6 +463,18 @@
 
       &__photo-right {
         display: none;
+      }
+    }
+
+    &__examplebox {
+      letter-spacing: 1px;
+      text-indent: 1rem;
+      &__inner {
+
+        &__text {
+
+        }
+
       }
     }
     &__fee {
