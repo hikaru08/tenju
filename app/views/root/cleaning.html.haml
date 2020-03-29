@@ -64,15 +64,10 @@
 
   .service_contents__title
     %span ご利用料金
-  -# .service_contents__fee
-  -#   %p.service_contents__fee__inner
-  -#     %span 家財整理サービス
-  -# .service_contents__price
-  -#   %span 1
-  -#   %span.small 日
-  -#   %span ２０，０００
-  -#   %span.small 円
-  -#   %span.small（税別）
+  .service_contents__fee
+    .plan__contents__body__reference.inner
+      %h3 家財整理作業費の参考価格
+      = render 'share/household-goods'
 
   .service_contents__title
     %span 参考事例
@@ -138,15 +133,10 @@
 
   .service_contents__title
     %span ご利用料金
-  -# .service_contents__fee
-  -#   %p.service_contents__fee__inner
-  -#     %span 家財整理サービス
-  -# .service_contents__price
-  -#   %span 1
-  -#   %span.small 日
-  -#   %span ２０，０００
-  -#   %span.small 円
-  -#   %span.small（税別）
+  .service_contents__fee
+    .plan__contents__body__reference.inner
+      %h3 生前整理作業費の参考価格
+      = render 'share/before-birth'
 
   .service_contents__title
     %span 参考事例
