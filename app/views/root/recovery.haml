@@ -96,11 +96,4 @@
 
   .service_contents__title
     %span 参考事例
-  .service_contents__casebox
-    .service_contents__casebox__inner
-      .service_contents__casebox__inner__back
-        %span Aさん宅の事例
-        .service_contents__casebox__inner__back__before
-          = image_tag "cleaning-image1.jpg"
-        .service_contents__casebox__inner__back__after
-          = image_tag "cleaning-image2.jpg"
+= render 'share/case/case-recovery'

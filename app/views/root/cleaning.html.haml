@@ -71,14 +71,7 @@
 
   .service_contents__title
     %span 参考事例
-  .service_contents__casebox
-    .service_contents__casebox__inner
-      .service_contents__casebox__inner__back
-        %span Aさん宅の事例
-        .service_contents__casebox__inner__back__before
-          = image_tag "cleaning-image1.jpg"
-        .service_contents__casebox__inner__back__after
-          = image_tag "cleaning-image2.jpg"
+= render 'share/case/case-household-goods-fee'
 
 .service_contents
   .service_contents__title
@@ -140,11 +133,4 @@
 
   .service_contents__title
     %span 参考事例
-  .service_contents__casebox
-    .service_contents__casebox__inner
-      .service_contents__casebox__inner__back
-        %span Bさん宅の事例
-        .service_contents__casebox__inner__back__before
-          = image_tag "cleaning-image1.jpg"
-        .service_contents__casebox__inner__back__after
-          = image_tag "cleaning-image2.jpg"
+= render 'share/case/case-before-birth-fee'
