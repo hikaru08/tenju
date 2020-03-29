@@ -55,6 +55,16 @@
           height: 25rem;
         }
       }
+    //遺品整理右
+      &__photo-right {
+        text-align: end;
+        margin-top: 2rem;
+
+        img {
+          width: 35rem;
+          height: 25rem;
+        }
+      }
   //家財整理版テキスト
       &__textbox {
         position: absolute;
@@ -75,7 +85,7 @@
           display: none;
         }
       }
-  //生前整理版テキスト
+    //生前整理版テキスト
       &__textbox_before-birth {
         position: absolute;
         right: 5%;
@@ -88,6 +98,47 @@
             font-size: 1.5rem;
           }
         }
+        &__description {
+          letter-spacing: 1px;
+        }
+        &__description_resp {
+          display: none;
+        }
+      }
+        //遺品整理版テキスト
+      &__textbox-re {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+
+        &__title {
+          border-bottom: 2px solid darkorange;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+
+        &__description {
+          letter-spacing: 1px;
+        }
+        &__description_resp {
+          display: none;
+        }
+      }
+      &__textbox-re-l {
+        position: absolute;
+        left: 0;
+        top: 57%;
+
+        &__title {
+          border-bottom: 2px solid darkorange;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+
         &__description {
           letter-spacing: 1px;
         }
@@ -364,7 +415,33 @@
           }
         }
       }
-    
+
+      &__textbox-re {
+
+        &__title {
+          border-bottom: 2px solid darkorange;
+          text-align: center;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+
+        &__description {
+          display: none;
+        }
+      }
+
+      &__textbox-re-l {
+
+        &__description {
+          display: none;
+        }
+      }
+
+      &__photo-right {
+        display: none;
+      }
     }
     &__fee {
 

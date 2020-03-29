@@ -1,0 +1,452 @@
+@media screen and (max-width:639px) {
+  /*スマホ用のcssを記述*/
+  .company{
+    padding: 0 1em;
+    &__photo {
+      padding: 20px;              /* 余白指定 */
+      vertical-align:  middle;    /* 中央寄せ */ 
+      background:#ddd url(company) no-repeat center center;
+      background-size:cover;
+      &__title {
+        color: #fff;
+        text-align: center;
+        background-color: orange;
+        width: 150px;               /* 幅指定 */
+        vertical-align:  middle;    /* 中央寄せ */
+        margin: auto;  
+        border-bottom: none;
+      }
+    }
+    &__greeting{
+      &__content{
+        font-size: 0.5em;
+        .box_greeting{
+          p{
+          }
+        }
+        
+        p.img_greeting_01{
+          text-align: center;
+          img{
+            width: 321px;
+            height: 494px;
+          }
+        }
+        .greeting_sign{
+          font-size: 1.8em;
+          dt{
+            display: inline-block;
+          }
+          dd{
+            display: inline-block;
+          }
+        }
+      }
+      &__photo{
+        img{
+          height: 20em;
+          border-radius: 20px;
+        }
+      }
+    }
+    &__content{
+      table{
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.4em;
+      }
+      
+      table tr{
+        border-bottom: solid 25px white;
+        padding: 1.1em 0;
+      }
+      
+      table tr:last-child{
+        border-bottom: none;
+      }
+      
+      table th{
+        position: relative;
+        text-align: left;
+        width: 30%;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+      
+      table th:after{
+        display: block;
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top:calc(50% - 10px);
+        right:-10px;
+        border-left: 10px solid orange;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+      
+      table td{
+        text-align: left;
+        width: 70%;
+        text-align: center;
+        background-color: #eee;
+        padding: 10px 0;
+      }
+    }
+    &__area{
+      margin: 70px auto;
+        &__title {
+          text-align: center;
+          border-bottom: 3px solid darkorange;
+          margin-bottom: 30px;
+        }
+      
+        &__block {
+          font-size: 1.3rem;
+          line-height: 1.8;
+      
+          &__ttl {
+            margin: 0 0 20px;
+            font-size: 1.3rem;
+            position: relative;
+            padding-left: 1.5em;
+            font-weight: bold;
+          }
+          &__text {
+            margin-bottom: 2.0em;
+            font-size: 1rem;
+          }
+          &__ttl::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: orange;
+            content: "■";
+          }
+        }
+    }
+    &__google{
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin: 2em;
+    }
+    &__google iframe,
+    &__google object,
+    &__google embed{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+  @media only screen and (min-width:640px) and (max-width:1023px) {
+  /*tablet用のcssを記述*/
+  .company{
+    &__photo {
+      padding: 20px;              /* 余白指定 */
+      vertical-align:  middle;    /* 中央寄せ */ 
+      background:#ddd url(company) no-repeat center center;
+      background-size:cover;
+      &__title {
+        color: #fff;
+        text-align: center;
+        background-color: orange;
+        width: 150px;               /* 幅指定 */
+        vertical-align:  middle;    /* 中央寄せ */
+        margin: auto;  
+      }
+    }
+   
+    &__greeting{
+      padding: 1.8em;
+      &__content{
+        font-size: 0.9em;
+        .box_greeting{
+          p{
+            font-size: 1.4em;
+          }
+        }
+        
+        p.img_greeting_01{
+          text-align: center;
+          img{
+            width: 321px;
+            height: 494px;
+          }
+        }
+        .greeting_sign{
+          text-align: right;
+          padding-right: 120px;
+          font-size: 2.5em;
+          dt{
+            display: inline-block;
+          }
+          dd{
+            display: inline-block;
+          }
+        }
+      }
+      &__photo{
+        img{
+          height: 20em;
+          border-radius: 20px;
+        }
+      }
+    }
+    &__content{
+      padding: 0 9em;
+      table{
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.4em;
+      }
+      
+      table tr{
+        border-bottom: solid 25px white;
+        padding: 1.1em 0;
+      }
+      
+      table tr:last-child{
+        border-bottom: none;
+      }
+      
+      table th{
+        position: relative;
+        text-align: left;
+        width: 30%;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+      
+      table th:after{
+        display: block;
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top:calc(50% - 10px);
+        right:-10px;
+        border-left: 10px solid orange;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+      
+      table td{
+        text-align: left;
+        width: 70%;
+        text-align: center;
+        background-color: #eee;
+        padding: 10px 0;
+      }
+    }
+    &__area{
+      margin: 70px auto;
+        &__title {
+          text-align: center;
+          border-bottom: 3px solid darkorange;
+          margin-bottom: 30px;
+        }
+      
+        &__block {
+          font-size: 1.3rem;
+          line-height: 1.8;
+      
+          &__ttl {
+            margin: 0 0 20px;
+            font-size: 1.3rem;
+            position: relative;
+            padding-left: 1.5em;
+            font-weight: bold;
+          }
+          &__text {
+            margin-bottom: 2.0em;
+            font-size: 1rem;
+          }
+          &__ttl::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: orange;
+            content: "■";
+          }
+        }
+    }
+    &__google{
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin: 2em;
+    }
+    &__google iframe,
+    &__google object,
+    &__google embed{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  }
+    
+  @media screen and (min-width:1024px) {
+  /*pc用のcssを記述*/
+    .company{
+
+      &__photo {
+        padding: 20px;              /* 余白指定 */
+        vertical-align:  middle;    /* 中央寄せ */ 
+        background:#ddd url(company) no-repeat center center;
+        background-size:cover;
+        &__title {
+          color: #fff;
+          text-align: center;
+          background-color: orange;
+          width: 150px;               /* 幅指定 */
+          vertical-align:  middle;    /* 中央寄せ */
+          margin: auto;  
+        }
+      }
+      &__greeting{
+        padding: 4em;
+        &__content{
+          position: relative;
+          .img_greeting_01{
+            position: absolute;
+            right: 160px;
+            top: 0;
+            
+            img{
+              width: 321px;
+              height: 494px;
+            }
+          }
+          .box_greeting{
+            p{
+              font-size: 1.4em;
+            }
+          }
+          .greeting_sign{
+            text-align: right;
+            padding-right: 120px;
+            font-size: 2.5em;
+            dt{
+              display: inline-block;
+            }
+            dd{
+              display: inline-block;
+            }
+          }
+        }
+        &__photo{
+          img{
+            height: 20em;
+            border-radius: 20px;
+          }
+        }
+      }
+      &__content{
+        padding: 0 9em;
+        table{
+          width: 100%;
+          border-collapse: collapse;
+          font-size: 1.4em;
+        }
+        
+        table tr{
+          border-bottom: solid 25px white;
+          padding: 1.1em 0;
+        }
+        
+        table tr:last-child{
+          border-bottom: none;
+        }
+        
+        table th{
+          position: relative;
+          text-align: left;
+          width: 30%;
+          background-color: orange;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+        }
+        
+        table th:after{
+          display: block;
+          content: "";
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          top:calc(50% - 10px);
+          right:-10px;
+          border-left: 10px solid orange;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+        }
+        
+        table td{
+          text-align: left;
+          width: 70%;
+          text-align: center;
+          background-color: #eee;
+          padding: 10px 0;
+        }
+      }
+      &__area{
+        margin: 70px auto;
+          &__title {
+            text-align: center;
+            border-bottom: 3px solid darkorange;
+            margin-bottom: 30px;
+          }
+        
+          &__block {
+            font-size: 1.3rem;
+            line-height: 1.8;
+        
+            &__ttl {
+              margin: 0 0 20px;
+              font-size: 1.3rem;
+              position: relative;
+              padding-left: 1.5em;
+              font-weight: bold;
+            }
+            &__text {
+              margin-bottom: 2.0em;
+              font-size: 1rem;
+            }
+            &__ttl::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              color: orange;
+              content: "■";
+            }
+          }
+      }
+      &__google{
+        text-align: center;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        margin: 5em;
+      }
+      &__google iframe,
+      &__google object,
+      &__google embed{
+        width: 100%;
+        height: 600px;
+      }
+    }
+  }
