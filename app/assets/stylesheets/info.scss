@@ -1,0 +1,61 @@
+.info{
+  margin-top: 3rem;
+  &__title{
+    text-align: center;
+    span{
+      color: #fff;
+      line-height: 2.5rem;
+      font-size: 1.3rem;
+      display: block;
+      background-color: orange;
+    }
+  }
+  &__form{
+    background-color: #fdf5e5;
+    padding: 2rem;
+    &__address, &__detail{
+      display: flex;
+      justify-content: center;
+      &__title{
+        border-right: lightgray solid 1px;
+        display: block;
+        width: 40%;
+        padding-left: 5rem;
+        .must{
+          color: #fff;
+          font-size: 0.9rem;
+          background-color: red;
+          padding: 0.1rem;
+          border-radius: 0.1rem;
+        }
+        .self{
+          color: #fff;
+          font-size: 0.9rem;
+          background-color: gray;
+          padding: 0.1rem;
+          border-radius: 0.1rem;
+        }
+      }
+      &__content{
+        display: block;
+        width: 60%;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        .form-box{
+          margin-bottom: 1rem;
+          padding: 0.5rem;
+        }
+        .postcode-box{
+          height: 2.5rem;
+          width: 5.5rem;
+        }
+        .prefecture-box{
+          height: 2.5rem;
+        }
+        .city-box, .address-box{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
