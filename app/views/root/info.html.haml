@@ -7,3 +7,8 @@
 .service_contents
   .service_contents__title
     %span 無料相談・お見積り
+
+%form
+  〒
+  %input{type: "text", name: "zip", onKeyUp: "AjaxZip3.zip2addr('zip', '', 'address', 'address');"}
+  %input{type: "text", name: "address"}
