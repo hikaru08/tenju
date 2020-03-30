@@ -1,7 +1,5 @@
 @media screen and (min-width: 1024px) {
   .service_main {
-    margin-top: 6.1rem;
-
     &__photo {
       height: 20rem;
       width: 100%;
@@ -10,6 +8,7 @@
       img {
         height: 100%;
         width: 100%;
+        opacity: .8;
         object-fit: cover;
       }
 
@@ -18,7 +17,6 @@
         color: #fff;
         text-align: center;
         background: rgba(255, 165, 0, 0.9);
-        position: absolute;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -33,15 +31,19 @@
   }
 
   .service_contents {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 2rem auto;
+    padding: 0 5rem;
 
     &__title {
       text-align: center;
-      border-bottom: 3px solid orange;
+      border-bottom: 2px solid orange;
       font-size: 2rem;
       font-weight: bold;
+    }
 
+    &__discription{
+      color: red;
     }
 
     &__container {
@@ -315,8 +317,6 @@
 /*レスポンシブ*/
 @media screen and (max-width: 1023px) {
   .service_main {
-    margin-top: 60px;
-
     &__photo{
       width: 100%;
       position: relative;
@@ -344,14 +344,15 @@
   }
 
   .service_contents {
-    max-width: 600px;
+    width: 100%;
     margin: 2rem auto;
+    padding: 0 3.5rem;
 
     &__title {
       text-align: center;
-      font-size: 1.5rem;
-      border-bottom: 3px solid orange;
-
+      font-size: 1.3rem;
+      font-weight: bold;
+      border-bottom: 2px solid orange;
     }
 
     &__container {
@@ -565,6 +566,22 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width:639px){
+  .service_main {
+    &__photo{
+      &__title {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .service_contents {
+    padding: 0 1.5rem;
+    &__title {
+      font-size: 1.1rem;
     }
   }
 }

@@ -1,5 +1,107 @@
 .service_main
   .service_main__photo
-    = image_tag "cleaning-image2.jpg"
+    = image_tag "info_image.jpg"
     .service_main__photo__title
-      %span 家財整理・生前整理
+      %span ご相談・お見積もり
+
+.service_contents
+  .service_contents__title
+    %span 無料相談・お見積り
+  .info-discription
+    %span お問い合わせいただいてから、原則２営業日内に当社スタッフよりお返事させていただきます。
+  %form.info
+    .info__title
+      %span お客さま情報
+    .info__form
+      .info__form__name
+        .info__form__name__title
+          %span お名前
+          %span.must 必須
+        .info__form__name__content
+          %input{type: "text", class: "form-box", placeholder: "例)小嶋 祥介"}
+      .info__form__name
+        .info__form__name__title
+          %span フリガナ
+          %span.must 必須
+        .info__form__name__content
+          %input{type: "text", class: "form-box", placeholder: "例)コジマ ヨシユキ"}
+      .info__form__number
+        .info__form__number__title
+          %span お電話番号
+          %span.must 必須
+        .info__form__number__content
+          %input{type: "text", class: "form-box", placeholder: "例)090-1234-5678"}
+      .info__form__mail
+        .info__form__mail__title
+          %span メールアドレス
+          %span.self 任意
+        .info__form__mail__content
+          %input{type: "text", class: "form-box", placeholder: "例)tenju.eco@gmail.com"}
+      .info__form__address
+        .info__form__address__title
+          %span 現地ご住所
+          %span.must 必須
+        .info__form__address__content
+          〒
+          %input{type: "text", name: "zip1", onKeyUp: "AjaxZip3.zip2addr('zip1', 'zip2', 'address1', 'address2');", class: "form-box postcode-box"}
+          ー
+          %input{type: "text", name: "zip2", onKeyUp: "AjaxZip3.zip2addr('zip1', 'zip2', 'address1', 'address2');", class: "form-box postcode-box"}
+          .select-box
+            %select{name: "address1", class: "form-box prefecture-box"}
+              %option{value: ""} --選択してください--
+              %option{ value: "1"} 北海道
+              %option{ value: "2"} 青森県
+              %option{ value: "3"} 岩手県
+              %option{ value: "4"} 宮城県
+              %option{ value: "5"} 秋田県
+              %option{ value: "6"} 山形県
+              %option{ value: "7"} 福島県
+              %option{ value: "8"} 茨城県
+              %option{ value: "9"} 栃木県
+              %option{ value: "10"} 群馬県
+              %option{ value: "11"} 埼玉県
+              %option{ value: "12"} 千葉県
+              %option{ value: "13"} 東京都
+              %option{ value: "14"} 神奈川県
+              %option{ value: "15"} 新潟県
+              %option{ value: "16"} 富山県
+              %option{ value: "17"} 石川県
+              %option{ value: "18"} 福井県
+              %option{ value: "19"} 山梨県
+              %option{ value: "20"} 長野県
+              %option{ value: "21"} 岐阜県
+              %option{ value: "22"} 静岡県
+              %option{ value: "23"} 愛知県
+              %option{ value: "24"} 三重県
+              %option{ value: "25"} 滋賀県
+              %option{ value: "26"} 京都府
+              %option{ value: "27"} 大阪府
+              %option{ value: "28"} 兵庫県
+              %option{ value: "29"} 奈良県
+              %option{ value: "30"} 和歌山県
+              %option{ value: "31"} 鳥取県
+              %option{ value: "32"} 島根県
+              %option{ value: "33"} 岡山県
+              %option{ value: "34"} 広島県
+              %option{ value: "35"} 山口県
+              %option{ value: "36"} 徳島県
+              %option{ value:"37"} 香川県
+              %option{ value: "38"} 愛媛県
+              %option{ value: "39"} 高知県
+              %option{ value: "40"} 福岡県
+              %option{ value: "41"} 佐賀県
+              %option{ value: "42"} 長崎県
+              %option{ value: "43"} 熊本県
+              %option{ value: "44"} 大分県
+              %option{ value: "45"} 宮崎県
+              %option{ value: "46"} 鹿児島県
+              %option{ value: "47"} 沖縄県
+          %input{type: "text", name: "address2", placeholder: "市区町村", class: "form-box city-box"}
+          %br
+          %input{type: "text", name: "address3", placeholder: "番地・建物名", class: "form-box address-box"}
+      .info__form__detail
+        .info__form__detail__title
+          %span お問い合わせ内容
+          %span.self 任意
+        .info__form__detail__content
+          %textarea{cols: "60", rows: "10", placeholder: "例)生前整理をして頂きたいのですが、平日の午前中に見積もりに来ていただくことは出来ますか？今月中に作業をすませて欲しいので、そちらも可能かどうかお返事いただきたいです。", class: "form-box"}

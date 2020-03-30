@@ -14,7 +14,7 @@
       }
     }
     &__step, &__service{
-      background-color: #fcfde7;
+      background-color: #fdf5e5;
     }
     &__step, &__solve, &__service, &__worries{
       padding: 0 5rem 2rem 5rem;
@@ -47,6 +47,7 @@
           margin-bottom: 2rem;
           display: flex;
           text-align: center;
+          justify-content: center;
           &__first, &__second, &__third, &__fourth{
             position: relative;
             margin: 0 1.5rem;
@@ -271,7 +272,7 @@
       &__title{
         padding-top: 1.5rem;
         span{
-          font-size: 1.1rem;
+          font-size: 1.3rem;
         }
       }
       &__content-responsive{
