@@ -1,7 +1,7 @@
 .info{
-  margin-top: 3rem;
   &__title{
     text-align: center;
+    margin-top: 2.5rem;
     span{
       color: #fff;
       line-height: 2.5rem;
@@ -13,7 +13,7 @@
   &__form{
     background-color: #fdf5e5;
     padding: 2rem;
-    &__address, &__detail{
+    &__address, &__detail, &__name, &__number, &__mail{
       display: flex;
       justify-content: center;
       &__title{
@@ -23,16 +23,16 @@
         padding-left: 5rem;
         .must{
           color: #fff;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           background-color: red;
-          padding: 0.1rem;
+          padding: 0.2rem;
           border-radius: 0.1rem;
         }
         .self{
           color: #fff;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           background-color: gray;
-          padding: 0.1rem;
+          padding: 0.2rem;
           border-radius: 0.1rem;
         }
       }
@@ -44,16 +44,61 @@
         .form-box{
           margin-bottom: 1rem;
           padding: 0.5rem;
+          border: 1px solid lightgray;
+          width: 100%;
         }
         .postcode-box{
           height: 2.5rem;
           width: 5.5rem;
         }
-        .prefecture-box{
-          height: 2.5rem;
+        .select-box::before{
+          position: absolute;
+          right: 1rem;
+          top: 1.2rem;
+          border-top: 10px gray solid;
+          border-right: 8px transparent solid;
+          border-left: 8px transparent solid;
+          content: '';
+        }
+        .select-box{
+          position: relative;
+          width: 100%;
+          .prefecture-box:hover{
+            cursor: pointer;
+          }
+          .prefecture-box{
+            width: 100%;
+            padding: 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            border-radius: 0;
+          }
         }
         .city-box, .address-box{
           width: 100%;
+        }
+      }
+    }
+  }
+}
+.info-discription{
+  margin-top: 1rem;
+  text-align: center;
+}
+@media screen and (max-width:1023px){
+  .info{
+    &__form{
+      &__address, &__detail, &__name, &__number, &__mail{
+        display: block;
+        &__title{
+          margin-bottom: 1rem;
+        }
+        &__title, &__content{
+          border: none;
+          width: 100%;
+          padding: 0;
         }
       }
     }
