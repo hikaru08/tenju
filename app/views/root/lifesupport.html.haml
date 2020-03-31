@@ -1,0 +1,95 @@
+.service_main
+  .service_main__photo
+    = image_tag "cleaning-image2.jpg", alt:"部屋の写真"
+    .service_main__photo__title
+      %span ライフサポート
+
+    - breadcrumb :lifesupport
+    = render 'share/breadcrumb'
+
+.service_contents
+  .service_contents__title
+    %span 簡易代行
+  .service_contents__container
+    .service_contents__container__photo
+      =image_tag "cleaning-image1.jpg"
+    .service_contents__container__textbox
+      .service_contents__container__textbox__title
+        %span 小さなことでもご相談ください
+      .service_contents__container__textbox__description
+        %p
+          ちょっとした事だけど手伝ってほしい事ありませんか。
+        %p
+          頼める人が近くにいない。忙しくて時間がない。
+        %p
+          足腰が弱ってきて体力的に厳しい。
+        %p
+          病気やケガ・体調が悪く安静が必要。
+        %p
+          遠方に住んでいるので代わりに家族を助けてやってほしい。
+        %p
+          娘がお産で里帰り自分は仕事をしていて
+        %p
+          あまり見てやれない。など
+        %p
+          小さい事でもどんな事でもお手伝いいたします。
+
+      .service_contents__container__textbox__description_resp
+        %p
+          ちょっとした事だけど手伝ってほしい事
+        %p
+          ありませんか。
+        %p
+          頼める人が近くにいない。
+        %p
+          忙しくて時間がない。
+        %p
+          足腰が弱ってきて体力的に厳しい。
+        %p
+          病気やケガ・体調が悪く安静が必要。
+        %p
+          遠方に住んでいるので代わりに
+        %p
+          家族を助けてやってほしい。
+        %p
+          娘がお産で里帰り自分は仕事をしていて
+        %p
+          あまり見てやれない。など
+        %p
+          小さい事でもどんな事でも
+        %p
+          お手伝いいたします。
+
+  .service_contents__title
+    %span サービス事例
+  .service_contents__examplebox
+    .service_contents__examplebox__inner
+      .service_contents__examplebox__inner__text
+        %p
+          ✅　お買い物代行
+        %p
+          ✅　簡単なお部屋の清掃
+        %p
+          ✅　敷地内の草刈り
+        %p
+          ✅　電球交換
+        %p
+          ✅　家具の移動
+        %p
+          ✅　除雪作業
+      .service_contents__examplebox__inner__text-right
+        %p
+          ✅　引っ越しに伴う荷造りのお手伝い
+        %p
+          ✅　限定品を並んで買ってきてほしい
+        %p
+          ✅　病院や買い物などの付き添い
+  .service_contents__title
+    %span ご利用料金
+  .service_contents__fee
+    .plan__contents__body__reference.inner
+      %h3 ライフサポート作業費の参考価格
+      = render 'share/fee/lifesuport-fee'
+  .service_contents__title
+    %span 参考事例
+= render 'share/case/case-lifeaupport'
