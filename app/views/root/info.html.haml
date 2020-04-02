@@ -105,3 +105,11 @@
           %span.self 任意
         .info__form__detail__content
           %textarea{cols: "60", rows: "10", placeholder: "例)生前整理をして頂きたいのですが、平日の午前中に見積もりに来ていただくことは出来ますか？今月中に作業をすませて欲しいので、そちらも可能かどうかお返事いただきたいです。", class: "form-box"}
+    .info__submit
+      .info__submit__attention
+      .info__submit__check
+        %label{for: "agree"}
+          上記規約内容に同意する
+        %input{type: "checkbox", class: "agree"}
+      .info__submit__button
+        %input{type: "submit", value: "入力内容を確認する", class: "submit-btn"}
