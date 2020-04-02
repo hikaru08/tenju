@@ -82,6 +82,43 @@
       }
     }
   }
+  &__submit{
+    &__attention{
+      margin: 2rem auto 0 auto;
+      max-width: 50rem;
+      height: 15rem;
+      border: solid 1px lightgray;
+    }
+    &__check{
+      margin-top: 2rem;
+      text-align: center;
+    }
+    &__button{
+      text-align: center;
+      margin-top: 1rem;
+      .submit-btn:hover{
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 1.2rem 2rem;
+        border: darkorange solid 1px;
+        background: #fff;
+        color: darkorange;
+      }
+      .submit-btn{
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding: 1.2rem 2rem;
+        border: darkorange solid 1px;
+        background: darkorange;
+        color: #fff;
+        transition: .3s;
+      }
+    }
+  }
 }
 .info-discription{
   margin-top: 1rem;
