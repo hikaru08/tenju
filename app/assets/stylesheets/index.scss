@@ -13,14 +13,9 @@
         }
       }
       &__info-box{
-        position: absolute;
         overflow-y: scroll;
-        bottom: 2rem;
-        left: 3rem;
         background-color: #fff;
         opacity: .9;
-        width: 55%;
-        height: 45%;
         &__title{
           span{
             padding: 0.5rem 0;
@@ -37,8 +32,14 @@
             margin-bottom: 0.5rem;
             font-size: 1.2rem;
           }
+          .date{
+            display: block;
+            margin-bottom: 0.5rem;
+          }
           .discription{
+            display: block;
             font-weight: normal;
+            margin-bottom: 1.2rem;
           }
         }
       }
@@ -223,9 +224,46 @@
 }
 
 /*レスポンシブデザイン*/
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) {
+  .index__container__image__info-box{
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    width: 55%;
+    height: 45%;
+  }
+}
+@media screen and (max-width:1023px) {
   .index{
     &__container{
+      &__image{
+        &__text-zone{
+          &__catch{
+            span{
+            }
+          }
+        }
+        &__info-box{
+          width: 100%;
+          padding: 2rem;
+          &__title{
+            span{
+              border: none;
+            }
+          }
+          &__content{
+            border: 1px solid lightgray;
+            overflow: scroll;
+            max-height: 15rem;
+            .title{
+            }
+            .date{
+            }
+            .discription{
+            }
+          }
+        }
+      }
       &__step, &__solve, &__service, &__worries{
         padding: 0 3.5rem 2rem 3.5rem;
         &__content{
@@ -297,6 +335,23 @@
 
 @media screen and (max-width:639px) {
   .index__container{
+    &__image{
+      &__info-box{
+        padding: 0.5rem 1.5rem 1rem 1.5rem;
+        &__content{
+          max-height: 10rem;
+          .title{
+            font-size: 0.8rem;
+          }
+          .date{
+            font-size: 0.8rem;
+          }
+          .discription{
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
     &__step, &__solve, &__service, &__worries{
       padding: 0 1.5rem 1rem 1.5rem;
       &__title{
