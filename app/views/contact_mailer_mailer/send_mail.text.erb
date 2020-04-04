@@ -1,0 +1,25 @@
+<%= @contact.name_full %> 様 から問い合わせがありました。
+<p>
+  名前（姓名）
+  <%= @contact.name_full %>
+</p>
+<p>
+  名前（フリガナ）
+  <%= @contact.content %>
+</p>
+<p>
+  電話番号
+  <%= @contact.phone %>
+</p>
+<p>
+  郵便番号・都道府県名
+  <%= @contact.zip1.zip2 %>
+</p>
+<p>
+  住所
+  <%= @contact.address1.address2.address3 %>
+</p>
+<p>
+  お問い合わせ内容
+  <%= @contact.content %>
+</p>

@@ -67,3 +67,5 @@ gem 'font-awesome-rails'
 gem 'font-awesome-sass'
 gem "jquery-rails"
 gem 'jquery-turbolinks'
+gem 'dotenv-rails'
+gem 'recaptcha', require: "recaptcha/rails"
