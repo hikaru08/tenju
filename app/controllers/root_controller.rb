@@ -18,11 +18,11 @@ class RootController < ApplicationController
 
   def confirm
     @contact = Contact.new(contact_params)
-    if verify_recaptcha(model: @contact) && @contact.save
+    if @contact.save
       ContactMailer.send_mail(@contact).deliver_now
       render :action => 'done'
     else
-      render 'index'
+      redirect_to root_path
     end
   end
 

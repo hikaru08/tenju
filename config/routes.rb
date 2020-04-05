@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'root/performance', to: 'root#performance'
   get 'root/info', to: 'root#info'
   get 'root/plan', to: 'root#plan'
-  get 'root/info' => 'root#info'
-  get  'root/contact' =>'root#contact'
-  post 'root/confirm' => 'rootw#confirm'
+  get  'root/contact',to:'root#contact'
+  get  'root/done',to:'root#done'
+  post 'root/confirm',to:'rootw#confirm'
 end
