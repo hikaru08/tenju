@@ -1,18 +1,33 @@
-= form_for @contact, :url => root_thanks_path do |f|
-  %table.table
-    %tr
-      %th 名前
-      %td
-        = f.hidden_field :name_full
-        = @contact.name_full
-    %tr
-      %th メールアドレス
-      %td
-        = f.hidden_field :email
-        = @contact.email
-    %tr
-      %th お問い合わせ内容
-      %td
-        = f.hidden_field :content
-        = simple_format(@contact.content)
-  = f.submit '送信', :class => 'btn btn-primary'
+.confirm-main
+  .confirm-main__center
+    = form_for @contact, url:root_thanks_path do |f|
+      %table.table
+        %tr
+          %th 名前
+          %td
+            = f.hidden_field :name_full
+            = @contact.name_full
+        %tr
+          %th メールアドレス
+          %td
+            = f.hidden_field :email
+            = @contact.email
+        %tr
+          %th 住所
+          %td
+            = f.hidden_field :zip1
+            = @contact.zip1
+            = f.hidden_field :zip2
+            = @contact.zip2
+            = f.hidden_field :address1
+            = @contact.address1
+            = f.hidden_field :address2
+            = @contact.address2
+            = f.hidden_field :address3
+            = @contact.address3
+        %tr
+          %th お問い合わせ内容
+          %td
+            = f.hidden_field :content
+            = simple_format(@contact.content)
+      = f.submit '送信', :class => 'btn btn-primary'

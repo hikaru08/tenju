@@ -9,6 +9,16 @@
     %span 無料相談・お見積り
   .info-discription
     %span お問い合わせいただいてから、原則２営業日内に当社スタッフよりお返事させていただきます。
+  .info-error
+    = render partial: 'error-messages', locals: {contact: @contact, column: "name_full"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "name_cana"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "email"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "phone"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "zip1"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "zip2"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "address1"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "address2"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "content"}
   %form.info
   = form_with model: @contact, url: root_confirm_path,local: true do |f|
     .info__title
@@ -25,7 +35,7 @@
           %span フリガナ
           %span.must 必須
         .info__form__name__content
-          = f.text_field :name_full ,class: "form-box", placeholder: "例)コジマ ヨシユキ"
+          = f.text_field :name_cana ,class: "form-box", placeholder: "例)コジマ ヨシユキ"
       .info__form__number
         .info__form__number__title
           %span お電話番号

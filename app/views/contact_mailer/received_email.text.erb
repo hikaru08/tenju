@@ -1,8 +1,10 @@
 Webサイトからお問い合わせがありました。
 
 --------------------------
-Name: <%= @contact.name_full %>
+お名前: <%= @contact.name_full %><%= @contact.name_cana%>
 Email: <%= @contact.email %>
-Message:
+お電話番号: <%= @contact.phone %>
+ご住所: <%= @contact.zip1%><%= @contact.zip2%><%= @contact.address1%><%= @contact.address2%><%= @contact.address3%>
+お問い合わせ内容:
 <%= @contact.content %>
 --------------------------
