@@ -13,13 +13,20 @@ class RootController < ApplicationController
   end
 
   def info
-    # @contact = Contact.new(contact_params)
-    # if verify_recaptcha(model: @contact) && @contact.save
-    #   ContactMailer.send_mail(@contact).deliver_now
-    #   render :action => 'index'
-    # else
-    #   render 'info'
-    # end
+    @contact = Contact.new
+  end
+
+  def confirm
+    @contact = Contact.new(contact_params)
+    if verify_recaptcha(model: @contact) && @contact.save
+      ContactMailer.send_mail(@contact).deliver_now
+      render :action => 'done'
+    else
+      render 'index'
+    end
+  end
+
+  def done
   end
 
   def plan
@@ -27,6 +34,6 @@ class RootController < ApplicationController
 
   private
   def contact_params
-    params.require(:contact).permit(:name_full, :name_cana, :phone, :email, :zip1, :zip2, :address1, :address2, :address3, :content)
+    params.permit(:name_full, :name_cana, :phone, :email, :zip1, :zip2, :address1, :address2, :address3, :content)
   end
 end
