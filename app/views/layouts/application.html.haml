@@ -6,7 +6,9 @@
     %title 滋賀の遺品整理・生前整理なら『天授』
     = csrf_meta_tags
     = csp_meta_tag
-    %script{ charset: 'UTF-8', src: 'https://ajaxzip3.github.io/ajaxzip3.js'}
+    %script{ charset: 'UTF-8', src: 'https://ajaxzip3.github.io/ajaxzip3.js'}/
+    %script{src: "./jquery.js", type: "text/javascript"}
+    %script{src: "app/assets/javascripts/jquery.autoKana.js", type: "text/javascript"}
     %link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700")/
     %meta{content: "width=device-width,initial-scale=1.0", name: "viewport"}/
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'

@@ -29,13 +29,13 @@
           %span お名前
           %span.must 必須
         .info__form__name__content
-          = f.text_field :name_full, class: "form-box", placeholder: "例)小嶋 祥介"
+          = f.text_field :name_full, class: "form-box", placeholder: "例)小嶋 祥介",id: "name_full"
       .info__form__name
         .info__form__name__title
           %span フリガナ
           %span.must 必須
         .info__form__name__content
-          = f.text_field :name_cana ,class: "form-box", placeholder: "例)コジマ ヨシユキ"
+          = f.text_field :name_cana ,class: "form-box", placeholder: "例)コジマ ヨシユキ",id:"name_cana"
       .info__form__number
         .info__form__number__title
           %span お電話番号
@@ -54,11 +54,11 @@
           %span.must 必須
         .info__form__address__content
           〒
-          = f.text_field :zip1, onKeyUp: "AjaxZip3.zip2addr('zip1', 'zip2', 'address1', 'address2');", class: "form-box postcode-box"
+          = f.text_field :zip1, class: "form-box postcode-box"
           ー
-          = f.text_field :zip2, onKeyUp: "AjaxZip3.zip2addr('zip1', 'zip2', 'address1', 'address2');", class: "form-box postcode-box"
+          = f.text_field :zip2, onKeyUp: "AjaxZip3.zip2addr('contact[zip1]', 'contact[zip2]', 'contact[address1]', 'contact[address2]');", class: "form-box postcode-box"
           .select-box
-            = f.select :address1, options_for_select(Contact.addresses), {class: "form-box prefecture-box"}
+            = f.select :address1, options_for_select(Contact.addresses), {},{class: "form-box prefecture-box"}
           = f.text_field :address2, placeholder: "市区町村", class: "form-box city-box"
           %br
           = f.text_field :address3, placeholder: "番地・建物名", class: "form-box address-box"
