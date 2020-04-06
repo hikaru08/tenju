@@ -4,6 +4,32 @@
       = image_tag 'top_image.jpg', alt: 'PCを持った女性'
       .index__container__image__text-zone
         .index__container__image__text-zone__catch
+      .index__container__image__info-box
+        .index__container__image__info-box__title
+          %span 新着のお知らせ
+        .index__container__image__info-box__content
+          %span.title
+            大切なお客様へ、新型コロナウィルスへの対応につきまして
+          %span.date
+            3/29(日)
+          %span.discription
+            　新型コロナウィルスの拡大を受け、当社では、極力外出を控えたいというお客様のために、買い物代行サービス等の生活支援サービスを実施しております。ご要望の方はフリーダイヤルまたは、お問い合わせフォームにてご連絡いただきますようよろしくお願い申し上げます。
+          %span.date
+            3/29(日)
+          %span.discription
+            　新型コロナウィルスの拡大を受け、当社では、極力外出を控えたいというお客様のために、買い物代行サービス等の生活支援サービスを実施しております。ご要望の方はフリーダイヤルまたは、お問い合わせフォームにてご連絡いただきますようよろしくお願い申し上げます。
+    .index__container__pick-up
+      .index__container__pick-up__content
+        = image_tag 'disinfection', alt: '消毒'
+        .index__container__pick-up__content__right
+          .index__container__pick-up__content__right__box
+            %p.title
+              消臭消毒サービス実施中！
+            = link_to root_info_path do
+              %span
+                お問い合わせはこちら
+                = fa_icon 'angle-double-right'
+
     .index__container__step
       .index__container__step__title
         %span ご利用の流れ

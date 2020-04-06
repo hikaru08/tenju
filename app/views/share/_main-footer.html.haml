@@ -3,11 +3,10 @@
     = link_to "▲" , "#wrap" , id: "return-top" , class: "return-top"
   .main-footer__contents.inner
     .main-footer__contents__logo-box
-      = link_to root_path do
-        = image_tag "logo_black.png" , size:"100x100" , class: 'logo'
-        = image_tag 'logo_text.png', size: '100x60' , class: 'logo_text'
       .main-footer__contents__logo-box__proof
-        = image_tag "is.jpg" , class: 'proof'
+        = image_tag "is1.jpg" , class: 'proof'
+        = image_tag "is2.jpg" , class: 'proof'
+      
     %nav.main-footer__contents__nav
       %ul.main-footer__contents__nav__list
         %li.main-footer__contents__nav__list__item
@@ -18,6 +17,7 @@
           = link_to "家財整理" , root_cleaning_path
         %li.main-footer__contents__nav__list__item
           = link_to "生活支援" , root_lifesupport_path
+      %ul.main-footer__contents__nav__list.ul-last
         %li.main-footer__contents__nav__list__item
           = link_to "料金一覧" , root_plan_path
         %li.main-footer__contents__nav__list__item

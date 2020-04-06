@@ -12,6 +12,73 @@
           }
         }
       }
+      &__info-box{
+        overflow-y: scroll;
+        background-color: #fff;
+        opacity: .9;
+        &__title{
+          span{
+            padding: 0.5rem 0;
+            margin: 0 1rem;
+            display: block;
+            text-align: center;
+            border-bottom: solid 1px gray;
+          }
+        }
+        &__content{
+          padding: 1rem 1.5rem;
+          .title{
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+          }
+          .date{
+            display: block;
+            margin-bottom: 0.5rem;
+          }
+          .discription{
+            display: block;
+            font-weight: normal;
+            margin-bottom: 1.2rem;
+          }
+        }
+      }
+    }
+    &__pick-up{
+      padding: 3rem;
+      &__content{
+        background-color: rgb(245, 245, 245);
+        padding: 1.5rem;
+        max-width: 60rem;
+        margin: 0 auto;
+        display: flex;
+        img{
+          width:53%;
+        }
+        &__right{
+          margin-left: 2rem;
+          width: 100%;
+          &__box{
+            width: 100%;
+            text-align: center;
+            .title{
+              font-size: 1.2rem;
+              margin: 0 0 2rem 0;
+              color: darkorange;
+            }
+            span:hover{
+              color: rgba($color: darkorange, $alpha: 0.7);
+            }
+            span{
+              display: block;
+              padding: 0.7rem;
+              background-color: #fff;
+              color: darkorange;
+              border-radius: 1.5rem;
+            }
+          }
+        }
+      }
     }
     &__step, &__service{
       background-color: #fdf5e5;
@@ -193,9 +260,51 @@
 }
 
 /*レスポンシブデザイン*/
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) {
+  .index__container__pick-up__content__right__box{
+    .title{
+      font-size: 1.5rem;
+    }
+  }
+  .index__container__image__info-box{
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    width: 55%;
+    height: 45%;
+  }
+}
+@media screen and (max-width:1023px) {
   .index{
     &__container{
+      &__image{
+        &__text-zone{
+          &__catch{
+            span{
+            }
+          }
+        }
+        &__info-box{
+          width: 100%;
+          padding: 2rem 2rem 0 2rem;
+          &__title{
+            span{
+              border: none;
+            }
+          }
+          &__content{
+            border: 1px solid lightgray;
+            overflow: scroll;
+            max-height: 15rem;
+            .title{
+            }
+            .date{
+            }
+            .discription{
+            }
+          }
+        }
+      }
       &__step, &__solve, &__service, &__worries{
         padding: 0 3.5rem 2rem 3.5rem;
         &__content{
@@ -226,9 +335,36 @@
     }
   }
 }
-
+@media screen and (min-width:768px){
+  .index__container__pick-up__content__right{
+    position: relative;
+    &__box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+    }
+  }
+}
 @media screen and (max-width:768px) {
   .index__container{
+    &__pick-up{
+      padding: 1.5rem;
+      &__content{
+        display: block;
+        padding: 1rem;
+        img{
+          width: 100%;
+        }
+        &__right{
+          margin: 1rem 0 0 0;
+          .title{
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
     &__step, &__solve, &__service, &__worries{
       &__content{
         &__up, &__down{
@@ -267,6 +403,23 @@
 
 @media screen and (max-width:639px) {
   .index__container{
+    &__image{
+      &__info-box{
+        padding: 0.5rem 1.5rem 1rem 1.5rem;
+        &__content{
+          max-height: 10rem;
+          .title{
+            font-size: 0.8rem;
+          }
+          .date{
+            font-size: 0.8rem;
+          }
+          .discription{
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
     &__step, &__solve, &__service, &__worries{
       padding: 0 1.5rem 1rem 1.5rem;
       &__title{

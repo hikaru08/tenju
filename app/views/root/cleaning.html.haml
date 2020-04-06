@@ -1,6 +1,6 @@
 .service_main
   .service_main__photo
-    = image_tag "cleaning-image2.jpg", alt:"部屋の写真"
+    = image_tag "flower.jpg", alt:"部屋の写真"
     .service_main__photo__title
       %span 家財整理・生前整理
 
@@ -9,128 +9,64 @@
 
 .service_contents
   .service_contents__title
-    %span 家財整理とは
+    %span 家財整理について
   .service_contents__container
     .service_contents__container__photo
-      =image_tag "cleaning-image1.jpg"
+      =image_tag "carry.jpg"
     .service_contents__container__textbox
       .service_contents__container__textbox__title
         %span 家の中をスッキリさせたい
       .service_contents__container__textbox__description
-        %p
-          物がどんどん増えて一度家の中を片付けたい。
-        %p
-          でも時間がない。重たい物が運べない。
-        %p
-          整理したいがなかなか行動におこせない
-        %p
-          家の中の片付けはとにかく大変なものです。
-        %p
-          少量の片付けから家一軒まるごとまでお任せください。
-        %p
-          不要な物がなくなると本当にスッキリします。
-        %p
-          買取できるものは買取し少しでもお客様のご負担を軽減、
-        %p
-          リュースやリサイクルできる物を
-        %p
-          経験豊かなスタッフがしっかり仕分けしてまいります。
-
-      .service_contents__container__textbox__description_resp
-        %p
-          物がどんどん増えて一度家の中を片付けたい。
-        %p
-          でも時間がない。重たい物が運べない。
-        %p
-          整理したいがなかなか行動におこせない
-        %p
-          家の中の片付けはとにかく大変なものです。
-        %p
-          少量の片付けから家一軒まるごとまで
-        %p
-          お任せください。
-        %p
-          不要な物がなくなると本当にスッキリします。
-        %p
-          買取できるものは買取し少しでも
-        %p
-          お客様のご負担を軽減、
-        %p
-          リュースやリサイクルできる物を
-        %p
-          経験豊かなスタッフがしっかり
-        %p
-          仕分けしてまいります。
+        %span
+          物がどんどん増えて一度家の中を片付けたい。でも時間がない。重たい物が運べない。整理したいがなかなか行動におこせない。
+          %br
+          家の中の片付けはとにかく大変なものです。少量の片付けから家一軒まるごとまでお任せください。不要な物がなくなると本当にスッキリします。
+          %br
+          買取できるものは買取し少しでもお客様のご負担を軽減、リュースやリサイクルできる物を経験豊かなスタッフがしっかり仕分けしてまいります。
 
   .service_contents__title
     %span ご利用料金
   .service_contents__fee
     .plan__contents__body__reference.inner
-      %h3 家財整理作業費の参考価格
+      %h3 家財整理の参考価格
       = render 'share/fee/household-goods-fee'
-
+  .service_contents__title
+    %span お得なパック料金
+  .service_contents__fee
+    .plan__contents__body__reference.inner
+      = render 'share/fee/pack-fee'
   .service_contents__title
     %span 参考事例
 = render 'share/case/case-household-goods'
 
 .service_contents
   .service_contents__title
-    %span 生前整理とは
+    %span 生前整理について
   .service_contents__container
     .service_contents__container__photo
-      =image_tag "cleaning-image1.jpg"
-    .service_contents__container__textbox_before-birth
-      .service_contents__container__textbox_before-birth__title
+      =image_tag "before.jpg"
+    .service_contents__container__textbox
+      .service_contents__container__textbox__title
         %span 大きな家財も片付けます
-      .service_contents__container__textbox_before-birth__description
-        %p
-          元気なうちに身のまわりの整理をしておきたい。
-        %p
-          施設入所することになったので片付け荷作りなど手伝ってほしい。
-        %p
-          子ども達や親族、ご近所さんには迷惑かけないようにしたい。
-        %p
-          そう思うのは親心であり、大切な人のために行う。
-        %p
-          とても大切なことであります。
-        %p
-          私達はそのお気持ちに寄り添いご依頼者様のご納得のいく
-        %p
-          お手伝いをさせていただきます。
-
-      .service_contents__container__textbox_before-birth__description_resp
-        %p
-          元気なうちに身のまわりの整理を
-        %p
-          しておきたい。
-        %p
-          施設入所することになったので、片付け
-        %p
-          荷作りなど手伝ってほしい。
-        %p
-          子ども達や親族、ご近所さんには
-        %p
-          迷惑かけないようにしたい。
-        %p
-          そう思うのは親心であり、大切な人の
-        %p
-          ために行う。
-        %p
-          とても大切なことであります。
-        %p
-          私達はそのお気持ちに寄り添い
-        %p
-          ご依頼者様のご納得のいくお手伝いを
-        %p
-          させていただきます。
+      .service_contents__container__textbox__description
+        %span
+          元気なうちに身のまわりの整理をしておきたい。施設入所することになったので片付け荷作りなど手伝ってほしい。子ども達や親族、ご近所さんには迷惑をかけないようにしたい。
+          %br
+          そう思うのは親心であり、大切な人たちにできるだけ負担をかけたくないという想いは誰しもが少なからずもっていることでしょう。
+          %br
+          私達は、そのお気持ちに寄り添いご依頼者様のご納得のいくお手伝いをさせていただきます。
 
   .service_contents__title
     %span ご利用料金
   .service_contents__fee
     .plan__contents__body__reference.inner
-      %h3 生前整理作業費の参考価格
+      %h3 生前整理の参考価格
       = render 'share/fee/before-birth-fee'
-
+  .service_contents__title
+    %span お得なパック料金
+  .service_contents__fee
+    .plan__contents__body__reference.inner
+      = render 'share/fee/pack-fee'
   .service_contents__title
     %span 参考事例
 = render 'share/case/case-before-birth'
