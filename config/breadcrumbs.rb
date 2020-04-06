@@ -1,40 +1,40 @@
 crumb :root do
-  link "Home", root_path
+  link "トップページ", root_path
 end
 
 # company
 crumb :company do
-  link "company", "root/company"
+  link "会社概要", "root/company"
 end
 
 # info
 crumb :info do
-  link "info", "root/info"
+  link "ご相談・お見積り", "root/info"
 end
 
 # lifesupport
 crumb :lifesupport do
-  link "lifesupport", "root/lifesupport"
+  link "生活支援", "root/lifesupport"
 end
 
 # performance
 crumb :performance do
-  link "performance", "root/performance"
+  link "実績紹介", "root/performance"
 end
 
 # recovery
 crumb :recovery do
-  link "recovery", "root/recovery"
+  link "遺品整理", "root/recovery"
 end
 
 # cleaning
 crumb :cleaning do
-  link "cleaning", "root/cleaning"
+  link "家財整理", "root/cleaning"
 end
 
 # plan
 crumb :plan do
-  link "plan", "root/plan"
+  link "料金一覧", "root/plan"
 end
 
 # サンプル

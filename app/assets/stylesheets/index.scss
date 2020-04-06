@@ -44,6 +44,42 @@
         }
       }
     }
+    &__pick-up{
+      padding: 3rem;
+      &__content{
+        background-color: rgb(245, 245, 245);
+        padding: 1.5rem;
+        max-width: 60rem;
+        margin: 0 auto;
+        display: flex;
+        img{
+          width:53%;
+        }
+        &__right{
+          margin-left: 2rem;
+          width: 100%;
+          &__box{
+            width: 100%;
+            text-align: center;
+            .title{
+              font-size: 1.2rem;
+              margin: 0 0 2rem 0;
+              color: darkorange;
+            }
+            span:hover{
+              color: rgba($color: darkorange, $alpha: 0.7);
+            }
+            span{
+              display: block;
+              padding: 0.7rem;
+              background-color: #fff;
+              color: darkorange;
+              border-radius: 1.5rem;
+            }
+          }
+        }
+      }
+    }
     &__step, &__service{
       background-color: #fdf5e5;
     }
@@ -225,6 +261,11 @@
 
 /*レスポンシブデザイン*/
 @media screen and (min-width:1024px) {
+  .index__container__pick-up__content__right__box{
+    .title{
+      font-size: 1.5rem;
+    }
+  }
   .index__container__image__info-box{
     position: absolute;
     bottom: 2rem;
@@ -245,7 +286,7 @@
         }
         &__info-box{
           width: 100%;
-          padding: 2rem;
+          padding: 2rem 2rem 0 2rem;
           &__title{
             span{
               border: none;
@@ -294,9 +335,36 @@
     }
   }
 }
-
+@media screen and (min-width:768px){
+  .index__container__pick-up__content__right{
+    position: relative;
+    &__box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+    }
+  }
+}
 @media screen and (max-width:768px) {
   .index__container{
+    &__pick-up{
+      padding: 1.5rem;
+      &__content{
+        display: block;
+        padding: 1rem;
+        img{
+          width: 100%;
+        }
+        &__right{
+          margin: 1rem 0 0 0;
+          .title{
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
     &__step, &__solve, &__service, &__worries{
       &__content{
         &__up, &__down{

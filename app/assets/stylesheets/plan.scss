@@ -184,8 +184,12 @@
       }
 
       &__reference{
-        // padding: 50px 0 0;
-
+        .pack-box{
+          margin: 0 auto;
+          span{
+            font-size: 0.8rem;
+          }
+        }
         &__box{
           margin-bottom: 2rem;
 
@@ -195,7 +199,7 @@
               width: 100%;
 
               th{
-                padding: 15px;
+                padding: 0.7rem 0;
                 background: orange;
                 color: #fff;
                 font-weight: bold;
@@ -217,10 +221,10 @@
               }
 
               td{
-                padding: 15px 5px;
+                padding: 0.6rem 0;
                 background: #fff;
                 border: 2px solid darkorange;
-                font-size: 1rem;
+                font-size: 0.9rem;
                 text-align: center;
               }
 
@@ -229,14 +233,12 @@
               }
             }
           }
-
           &__right{
-
             &__text{
               font-size: 1.1rem;
               line-height: 1.85;
               margin-bottom: 40px;
-              margin-top: 0;
+              margin-top: 2rem;
 
               &__caution{
                 display: inline-block;
@@ -252,8 +254,9 @@
                 content: "※";
               }
             }
-
-            &__payment{
+            &__option{
+              max-width: 30rem;
+              margin: 0 auto;
               padding: 30px 20px;
               background: #fff;
               border-radius: 10px;
@@ -270,29 +273,18 @@
                   color: #fff;
                   font-size: 1rem;
                   background: orange;
+                  border-radius: 2rem;
                 }
               }
-
-              &__orangetext{
-                color: orange;
-                font-size: 1rem;
-                line-height: 1.6em;
-              }
-
-              &__available{
-                margin-top: 10px;
-                color: darkorange;
-                font-size: 1rem;
-                line-height: 1.6em;
-
-                span{
-                  font-weight: bold;
-
-                  img{
-                    vertical-align: bottom;
-                    max-width: 100%;
-                  }
+              ul{
+                padding: 0 0 0 2rem;
+                li{
+                  list-style: inside;
                 }
+              }
+              p{
+                margin: 1rem 0 0 1.5rem;
+                font-size: 0.8rem;
               }
             }
           }
@@ -374,7 +366,7 @@
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1023px){
   
   .plan__contents{
 
@@ -395,7 +387,6 @@
         margin-bottom: 64px;
 
         &__box{
-
           ul{
             display: flex;
             flex-wrap: wrap;
@@ -452,8 +443,13 @@
       }
 
       &__reference{
-
         &__box{
+          .pack-box{
+            margin: 0 auto;
+            span{
+              font-size: 0.8rem;
+            }
+          }
           display: flex;
           flex-wrap: wrap;
 
@@ -465,6 +461,9 @@
           &__right{
             width: 48%;
             margin-left: 2%;
+            &__text{
+              margin-top: 0;
+            }
           }
         }
       }

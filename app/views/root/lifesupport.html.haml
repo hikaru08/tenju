@@ -1,8 +1,8 @@
 .service_main
   .service_main__photo
-    = image_tag "cleaning-image2.jpg", alt:"部屋の写真"
+    = image_tag "lavender.jpg", alt:"部屋の写真"
     .service_main__photo__title
-      %span ライフサポート
+      %span 生活支援
 
     - breadcrumb :lifesupport
     = render 'share/breadcrumb'
@@ -12,84 +12,119 @@
     %span 簡易代行
   .service_contents__container
     .service_contents__container__photo
-      =image_tag "cleaning-image1.jpg"
+      =image_tag "clean-kitchen.jpg"
     .service_contents__container__textbox
       .service_contents__container__textbox__title
         %span 小さなことでもご相談ください
       .service_contents__container__textbox__description
-        %p
+        %span
           ちょっとした事だけど手伝ってほしい事ありませんか。
-        %p
-          頼める人が近くにいない。忙しくて時間がない。
-        %p
-          足腰が弱ってきて体力的に厳しい。
-        %p
-          病気やケガ・体調が悪く安静が必要。
-        %p
-          遠方に住んでいるので代わりに家族を助けてやってほしい。
-        %p
-          娘がお産で里帰り自分は仕事をしていて
-        %p
-          あまり見てやれない。など
-        %p
+          %br
+          頼める人が近くにいない。忙しくて時間がない。足腰が弱ってきて体力的に厳しい。病気やケガ・体調が悪く安静が必要。遠方に住んでいるので代わりに家族を助けてやってほしい。娘がお産で里帰り、自分は仕事をしていてあまり見てやれない。
+          %br
           小さい事でもどんな事でもお手伝いいたします。
-
-      .service_contents__container__textbox__description_resp
-        %p
-          ちょっとした事だけど手伝ってほしい事
-        %p
-          ありませんか。
-        %p
-          頼める人が近くにいない。
-        %p
-          忙しくて時間がない。
-        %p
-          足腰が弱ってきて体力的に厳しい。
-        %p
-          病気やケガ・体調が悪く安静が必要。
-        %p
-          遠方に住んでいるので代わりに
-        %p
-          家族を助けてやってほしい。
-        %p
-          娘がお産で里帰り自分は仕事をしていて
-        %p
-          あまり見てやれない。など
-        %p
-          小さい事でもどんな事でも
-        %p
-          お手伝いいたします。
-
   .service_contents__title
-    %span サービス事例
-  .service_contents__examplebox
-    .service_contents__examplebox__inner
-      .service_contents__examplebox__inner__text
-        %p
-          ✅　お買い物代行
-        %p
-          ✅　簡単なお部屋の清掃
-        %p
-          ✅　敷地内の草刈り
-        %p
-          ✅　電球交換
-        %p
-          ✅　家具の移動
-        %p
-          ✅　除雪作業
-      .service_contents__examplebox__inner__text-right
-        %p
-          ✅　引っ越しに伴う荷造りのお手伝い
-        %p
-          ✅　限定品を並んで買ってきてほしい
-        %p
-          ✅　病院や買い物などの付き添い
+    %span サービス例
+  .index__container__solve.example-box           
+    .index__container__solve__content
+      .index__container__solve__content__list
+        .index__container__solve__content__list__inner
+          = fa_icon 'check'
+          %span
+            お買い物代行
+        .index__container__solve__content__list__inner
+          = fa_icon 'check'
+          %span
+            簡単なお部屋の清掃
+        .index__container__solve__content__list__inner
+          = fa_icon 'check'
+          %span
+            敷地内の草刈り
+        .index__container__solve__content__list__inner
+          = fa_icon 'check'
+          %span
+            電球交換
+        .index__container__solve__content__list__inner
+          = fa_icon 'check'
+          %span
+            家具の移動
+        .index__container__solve__content__list__inner
+          = fa_icon 'check'
+          %span
+            除雪作業
+        .index__container__solve__content__list__inner
+          = fa_icon 'check'
+          %span
+            引越しの荷造りのお手伝い
+        .index__container__solve__content__list__inner
+          = fa_icon 'check'
+          %span
+            限定品を並んで買ってきて欲しい
+        .index__container__solve__content__list__inner
+          = fa_icon 'check'
+          %span
+            病院や買い物などの付き添い
   .service_contents__title
     %span ご利用料金
   .service_contents__fee
     .plan__contents__body__reference.inner
-      %h3 ライフサポート作業費の参考価格
+      %h3 簡易代行の参考価格
       = render 'share/fee/lifesuport-fee'
   .service_contents__title
     %span 参考事例
 = render 'share/case/case-lifesupport'
+
+.service_contents
+  .service_contents__title
+    %span お墓清掃
+  .service_contents__container
+    .service_contents__container__photo
+      =image_tag "grave.jpg"
+    .service_contents__container__textbox
+      .service_contents__container__textbox__title
+        %span まごごろ込めた清掃
+      .service_contents__container__textbox__description
+        %span
+          体力的にお墓参りに行くのが難しくなってきた。遠方に住んでいてなかなか帰れない。
+          %br
+          お任せください。大切な先祖様のお墓をご依頼車様に代わり、心を込めて清掃させていただきます。
+  .service_contents__title
+    %span ご利用料金
+  .service_contents__fee
+    .plan__contents__body__reference.inner
+      %h3 お墓清掃の参考価格
+      = render 'share/fee/grave-fee'
+  .index
+    .index__container
+      .index__container__pick-up
+        .index__container__pick-up__content
+          = image_tag 'grave-zenith.png', alt: 'お墓'
+          .index__container__pick-up__content__right
+            .index__container__pick-up__content__right__box
+              %p.title
+                墓じまい・お墓のお引越し
+              = link_to "https://zenith-web.jp/" do
+                %span
+                  内容の詳細はこちら
+                  = fa_icon 'angle-double-right'
+
+.service_contents
+  .service_contents__title
+    %span 空き家管理
+  .service_contents__container
+    .service_contents__container__photo
+      =image_tag "house-manager.jpg"
+    .service_contents__container__textbox
+      .service_contents__container__textbox__title
+        %span あなたの代わりに見守ります
+      .service_contents__container__textbox__description
+        %span
+          突然の入院や親の介護などで長期不在になってしまう。遠方に住んでいるので空き家の実家をなかなか見に行けない。
+          %br
+          お任せください。大切なお家を見守りご報告いたします。
+  .service_contents__title
+    %span ご利用料金
+  .service_contents__fee
+    .plan__contents__body__reference.inner
+      %h3 空き家管理の参考価格
+      = render 'share/fee/house-manager-fee'

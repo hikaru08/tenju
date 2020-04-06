@@ -1,6 +1,6 @@
 .service_main
   .service_main__photo
-    = image_tag "cleaning-image2.jpg"
+    = image_tag "sakura.jpg"
     .service_main__photo__title
       %span 遺品整理
 
@@ -9,91 +9,37 @@
 
 .service_contents
   .service_contents__title
-    %span 遺品整理とは
+    %span 遺品整理について
   .service_contents__container
     .service_contents__container__photo
-      =image_tag "cleaning-image1.jpg"
-    .service_contents__container__textbox-re
-      .service_contents__container__textbox-re__title
+      =image_tag "pray.jpg"
+    .service_contents__container__textbox
+      .service_contents__container__textbox__title
         %span ご遺族の気持ちに寄り添う
-      .service_contents__container__textbox-re__description
-        %p
-          大切なご親族がお亡くなりになりご葬儀や各種手続きなど
-        %p
-          肉体的にも精神的にもご負担の多いご遺族様に代わり、
-        %p
-          故人が使用されていた品物全てのご遺品を丁寧に整理し
-        %p
-          形見分けをしてご遺族にお届けさせていただきます。
-        %p
+      .service_contents__container__textbox__description
+        %span
+          大切なご親族がお亡くなりになり、ご葬儀や各種手続きなど肉体的にも精神的にもご負担の多いご遺族様に代わり、故人が使用されていた品物全てのご遺品を丁寧に整理し、形見分けをしてご遺族にお届けさせていただきます。
+          %br
           残されたご遺品を廃棄するのがしのびないという場合は寺院での
-        %p
           お焚き上げをしていただく事もできます。
-
-    .service_contents__container__photo-right
-      =image_tag "cleaning-image1.jpg"
-    .service_contents__container__textbox-re-l
-      .service_contents__container__textbox-re-l__description
-        %p
-          お焚き上げにより故人はもちろんご遺族様にお気持ちも一緒に浄化され
-        %p
+          %br
+          お焚き上げにより故人はもちろん、ご遺族様のお気持ちも一緒に浄化され
           天に帰りますように。
-        %p
-          遺品整理は人生の中でそうあるものではありません。
-        %p
-          同じ現場はひとつとしてありません。
-        %p
-          ご遺族様の気持ちに寄り添い知識や実務、法令規則のノウハウを
-        %p
-          身につけたスタッフが
-        %p
-          心を込めてお手伝いさせていただきます。
-
-      .service_contents__container__textbox__description_resp
-        %p
-          大切なご親族がお亡くなりになり
-        %p
-          ご葬儀や各種手続きなど肉体的にも精神的にも
-        %p
-          ご負担の多いご遺族様に代わり、
-        %p
-          故人が使用されていた品物全てのご遺品を
-        %p
-          丁寧に整理し形見分けをしてご遺族に
-        %p
-          お届けさせていただきます。
-        %p
-          残されたご遺品を廃棄するのがしのびない
-        %p
-          という場合は寺院でのお焚き上げを
-        %p
-          していただく事もできます。
-        %p
-          お焚き上げにより故人はもちろん
-        %p
-          ご遺族様にお気持ちも一緒に浄化され
-        %p
-          天に帰りますように。
-        %p
-          遺品整理は人生の中でそうあるものでは
-        %p
-          ありません。
-        %p
-          同じ現場はひとつとしてありません。
-        %p
-          ご遺族様の気持ちに寄り添い知識や実務、
-        %p
-          法令規則のノウハウを身につけたスタッフが
-        %p
-          心を込めてお手伝いさせていただきます。
-
+          %br
+          遺品整理は人生の中でそうあるものではありません。同じ現場はひとつとしてありません。
+          %br
+          ご遺族様の気持ちに寄り添い知識や実務、法令規則のノウハウを身につけたスタッフが心を込めてお手伝いさせていただきます。
   .service_contents__title
     %span ご利用料金
   .service_contents__fee
     .plan__contents__body__reference.inner
-      %h3 遺品整理作業費の参考価格
+      %h3 遺品整理の参考価格
       = render 'share/fee/recovery-fee'
-
+  .service_contents__title
+    %span お得なパック料金
+  .service_contents__fee
+    .plan__contents__body__reference.inner
+      = render 'share/fee/pack-fee'
   .service_contents__title
     %span 参考事例
 = render 'share/case/case-recovery'

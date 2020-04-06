@@ -3,17 +3,19 @@
     %span.box-title
       生前整理
     .box-ti
-      %h3.tit　一軒家の生前整理のお手伝いを行いました。
       %p.sub 一軒家　３DK　作業人数：４人　作業時間：４時間
+    .box-ti.hidden
+      %p.sub 一軒家　３DK
+      %p.sub 作業人数：４人　作業時間：４時間
     .box-bottom
       .box-img
         .before
           = image_tag 'before_01', alt: 'before'
-          %p.txt Before
-        .triangle
+          %p.txt-before Before
+        = fa_icon 'caret-right'
         .after
           = image_tag 'after_01', alt: 'after'
-          %p.txt After
+          %p.txt-after After
       .box-price
         %p.viewPC 兵庫県の集合住宅で生前遺品整理をさせていただきました。細々したお品物もしっかりと不要品、買取できるお品物で分別させていただきました。弊社では戸建て、マンション、集合住宅等様々なご自宅に対応しています。
         %table.table
