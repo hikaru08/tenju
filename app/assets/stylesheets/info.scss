@@ -16,6 +16,9 @@
     &__address, &__detail, &__name, &__number, &__mail{
       display: flex;
       justify-content: center;
+      p{
+        word-break: break-all;
+      }
       &__title{
         border-right: lightgray solid 1px;
         display: block;
