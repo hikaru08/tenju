@@ -10,6 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_04_05_070419) do
+
+  create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name_full"
+    t.string "name_cana"
+    t.string "phone"
+    t.string "email"
+    t.string "zip1"
+    t.string "zip2"
+    t.string "address1"
+    t.string "address2"
+    t.string "address3"
+    t.string "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

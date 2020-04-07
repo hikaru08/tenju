@@ -16,6 +16,9 @@
     &__address, &__detail, &__name, &__number, &__mail{
       display: flex;
       justify-content: center;
+      p{
+        word-break: break-all;
+      }
       &__title{
         border-right: lightgray solid 1px;
         display: block;
@@ -96,7 +99,7 @@
     &__button{
       text-align: center;
       margin-top: 1rem;
-      .submit-btn:hover{
+      .submit-btn:hover, .btn-primary:hover{
         font-size: 1.2rem;
         font-weight: bold;
         text-align: center;
@@ -106,7 +109,7 @@
         background: #fff;
         color: darkorange;
       }
-      .submit-btn{
+      .submit-btn , .btn-primary{
         font-size: 1.2rem;
         font-weight: bold;
         text-align: center;
@@ -129,6 +132,9 @@
     &__form{
       &__address, &__detail, &__name, &__number, &__mail{
         display: block;
+        p{
+          word-break: break-word;
+        }
         &__title{
           margin-bottom: 1rem;
         }
@@ -140,4 +146,32 @@
       }
     }
   }
+}
+.confirm-main{
+  &__center
+    table{
+      width: 100%;
+    }
+    
+    table th{
+      position: relative;
+      text-align: left;
+      width: 15%;
+    }
+    
+    table th:after{
+      display: block;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #333;
+      position: absolute;
+      top:calc(50% - 1px);
+      right:20px;
+    }
+    
+    table td{
+      text-align: left;
+      width: 85%;
+    }
 }
