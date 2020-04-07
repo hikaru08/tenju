@@ -1,8 +1,8 @@
 .service_main
   .service_main__photo
-    = image_tag "lavender.jpg", alt:"部屋の写真"
+    = image_tag "lavender.jpg", alt:"花の写真"
     .service_main__photo__title
-      %span 生活支援
+      %span 生活サポート
 
     - breadcrumb :lifesupport
     = render 'share/breadcrumb'
@@ -12,7 +12,7 @@
     %span 簡易代行
   .service_contents__container
     .service_contents__container__photo
-      =image_tag "clean-kitchen.jpg"
+      =image_tag "clean-kitchen.jpg", alt:"キッチンの掃除"
     .service_contents__container__textbox
       .service_contents__container__textbox__title
         %span 小さなことでもご相談ください
@@ -69,7 +69,7 @@
   .service_contents__fee
     .plan__contents__body__reference.inner
       %h3 簡易代行の参考価格
-      = render 'share/fee/lifesuport-fee'
+      = render 'share/fee/lifesupport-fee'
   .service_contents__title
     %span 参考事例
 = render 'share/case/case-lifesupport'
@@ -79,7 +79,7 @@
     %span お墓清掃
   .service_contents__container
     .service_contents__container__photo
-      =image_tag "grave.jpg"
+      =image_tag "grave.jpg", alt:"お墓の清掃"
     .service_contents__container__textbox
       .service_contents__container__textbox__title
         %span まごごろ込めた清掃
@@ -98,7 +98,7 @@
     .index__container
       .index__container__pick-up
         .index__container__pick-up__content
-          = image_tag 'grave-zenith.png', alt: 'お墓'
+          = image_tag 'grave-zenith.png', alt: 'お墓の写真'
           .index__container__pick-up__content__right
             .index__container__pick-up__content__right__box
               %p.title
@@ -113,7 +113,7 @@
     %span 空き家管理
   .service_contents__container
     .service_contents__container__photo
-      =image_tag "house-manager.jpg"
+      =image_tag "house-manager.jpg", alt:"家の点検"
     .service_contents__container__textbox
       .service_contents__container__textbox__title
         %span あなたの代わりに見守ります

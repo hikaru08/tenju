@@ -1,9 +1,24 @@
 .service_main
   .service_main__photo
-    = image_tag "cleaning-image2.jpg", alt:"仕事の様子"
+    = image_tag "bouquet.jpg", alt:"花の写真"
     .service_main__photo__title
-      %span 実績紹介
-= render 'share/case/case-before-birth'
-= render 'share/case/case-household-goods'
-= render 'share/case/case-lifesupport'
+      %span お客様の声
+    - breadcrumb :performance
+    = render 'share/breadcrumb'
+
+.service_contents
+  .service_contents__title
+    %span 遺品整理の事例
 = render 'share/case/case-recovery'
+.service_contents
+  .service_contents__title
+    %span 生前整理の事例
+= render 'share/case/case-before-birth'
+.service_contents
+  .service_contents__title
+    %span 家財整理の事例
+= render 'share/case/case-household-goods'
+.service_contents
+  .service_contents__title
+    %span 生活サポートの事例
+= render 'share/case/case-lifesupport'

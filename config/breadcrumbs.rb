@@ -14,12 +14,12 @@ end
 
 # lifesupport
 crumb :lifesupport do
-  link "生活支援", "root/lifesupport"
+  link "生活サポート", "root/lifesupport"
 end
 
 # performance
 crumb :performance do
-  link "実績紹介", "root/performance"
+  link "お客様の声", "root/performance"
 end
 
 # recovery
