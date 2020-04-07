@@ -96,7 +96,7 @@
     &__button{
       text-align: center;
       margin-top: 1rem;
-      .submit-btn:hover{
+      .submit-btn:hover, .btn-primary:hover{
         font-size: 1.2rem;
         font-weight: bold;
         text-align: center;
@@ -106,7 +106,7 @@
         background: #fff;
         color: darkorange;
       }
-      .submit-btn{
+      .submit-btn , .btn-primary{
         font-size: 1.2rem;
         font-weight: bold;
         text-align: center;
