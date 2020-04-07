@@ -1,50 +1,30 @@
 .service_main
   .service_main__photo
-    = image_tag 'company.jpg', alt: 'officeの写真'
+    = image_tag 'company-image.jpg', alt:"花の写真"
     .service_main__photo__title
-      %span 実績紹介
+      %span 会社概要
+    - breadcrumb :company
+    = render 'share/breadcrumb'
+.service_contents
+  .service_contents__title
+    %span 代表挨拶
+  .service_contents__container.president-container
+    .service_contents__container__textbox.president-textbox
+      .service_contents__container__textbox__title
+        %span 代表取締役　小嶋祥介
+      .service_contents__container__textbox__description
+        %span
+          　近年、天災による災害や感染病または核家族化・少子高齢化が進み日本は高齢者が今後も増大する傾向があります。
+          %br
+          　私はこれまで、高齢者の方やそのご家族の不安なお気持ちを数多く耳にしてきました。そして、その声を聞きそのような方たちのお役に立ちたい、ほんの少しでも力になりたいと考えるようになりました。決して、おごりや余力での思いではございません。
+          %br
+          　私自身、母の介護を経て、そして他界してから周りの人のほんのちょっとしたわずかな力添えに助けられました。その想いを忘れることなく私はお約束いたします。ご依頼者様の心に寄り添い、お声を聞き、全ての出会いが天から授かったご縁であると捉え、ご依頼できますようにお手伝いをさせていただきます。
+    .service_contents__container__photo.president-photo
+      =image_tag "president.jpg"
+  .service_contents__title
+    %span 会社情報
 .company
-  .company__comtent
-    %h2 社長挨拶
-  .company__greeting
-    .company__greeting__content
-      .box_greeting
-        %p
-          近年、天災による災害や感染病または核家族化・少子高齢化が進み
-          %br/
-          日本は高齢者が今後も増大する傾向があります。
-        %p
-          高齢者の方やそのご家族の不安なお気持ちを数多く耳にしてきました。
-        %p
-          私はその声を聞きそのような方たちのお役に立ちたい、
-          %br/
-          ほんの少しでも力になりたいと考えるようになりました。
-        %p
-          決して、おごりや余力での思いではございません。
-          %br/
-        %p
-          私自身、母の介護を経てそして他界してから周りの人の
-          %br/
-          ほんのちょっとしたわずかな力添えに助けれました。
-          %br/
-        %p
-          その想いを忘れることなく私はお約束いたします。
-          %br/
-        %p
-          ご依頼者様の心に寄り添い、お声を聞き、
-          %br/
-          全ての出会いが天から授かったご縁であるととらえ、
-        %p
-          ご依頼者様が再出発できますようにお手伝いをさせていただきます。
-        %dl.greeting_sign
-          %dt
-            代表取締役
-          %dd
-            小嶋祥介
-      %p.img_greeting_01
-        = image_tag 'greeting.png', alt:"代表者取締役　小嶋　祥介"
   .company__content
-    %h2 会社概要
     %table
       %tr
         %th 会社名
@@ -81,6 +61,4 @@
       %tr
         %th 取引銀行
         %td 仮
-  .company__google
-    %p ・アクセス
-    %iframe{:allowfullscreen => "", "aria-hidden" => "false", :frameborder => "0",:src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.66116684318!2d136.2601185151901!3d35.239803861661734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003d45c0342267f%3A0xd9f7b4672a5bf5d3!2z44CSNTIyLTAyMDEg5ruL6LOA55yM5b2m5qC55biC6auY5a6u55S677yZ77yX77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1585140484475!5m2!1sja!2sjp", :style => "border:0;", :tabindex => "0", :width => "600"}
+%iframe{allowfullscreen: "", "aria-hidden" => "false", frameborder: "0",src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.66116684318!2d136.2601185151901!3d35.239803861661734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003d45c0342267f%3A0xd9f7b4672a5bf5d3!2z44CSNTIyLTAyMDEg5ruL6LOA55yM5b2m5qC55biC6auY5a6u55S677yZ77yX77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1585140484475!5m2!1sja!2sjp", style: "border:0;", tabindex: "0"}

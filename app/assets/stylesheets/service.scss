@@ -66,6 +66,15 @@
       }
     }
   }
+  .president-container{
+    .president-photo{
+      width: 30%;
+    }
+    .president-textbox{
+      width: 60%;
+      margin: 0 2.5rem 0 0;
+    }
+  }
   .example-box{
     padding: 0;
   }
@@ -297,9 +306,17 @@
           }
         }
       }
-
       &__photo-right {
         display: none;
+      }
+    }
+    .president-container{
+      display: flex;
+      .president-photo{
+        width: 40%;
+      }
+      .president-textbox{
+        width: 60%;
       }
     }
     &__fee {
@@ -451,6 +468,16 @@
           font-size: 0.8rem;
           line-height: 1.5rem;
         }
+      }
+    }
+    .president-container{
+      display: block;
+      .president-photo{
+        width: 60%;
+        margin: 0 auto;
+      }
+      .president-textbox{
+        width: 100%;
       }
     }
   }
