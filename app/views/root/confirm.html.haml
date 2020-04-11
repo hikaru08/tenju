@@ -93,3 +93,16 @@
     .info__submit
       .info__submit__button
         = f.submit "送信する", class: "btn btn-primary"
+      = form_for @contact, url: {controller:"root", action: "info"} do |f|
+        = f.hidden_field :name_full
+        = f.hidden_field :name_cana
+        = f.hidden_field :phone
+        = f.hidden_field :zip1
+        = f.hidden_field :zip2
+        = f.hidden_field :address1
+        = f.hidden_field :address2
+        = f.hidden_field :address3
+        = f.hidden_field :content
+        .info__submit
+          .info__submit__button
+            = f.submit "戻る", class: "btn btn-primary" 
