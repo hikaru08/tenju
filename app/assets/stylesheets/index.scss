@@ -207,10 +207,12 @@
             width: 50%;
             &__list{
               padding: 0 1rem 0 0;
+              li:before{
+                content: "・";
+              }
               li{
                 border-bottom: orange 1px dotted;
                 line-height: 2rem;
-                list-style: square;
                 font-weight: bold;
               }
             }
@@ -490,9 +492,6 @@
               content: "・";
             }
             li{
-              i{
-                display: none;
-              }
               font-size: 0.9rem;
             }
           }
