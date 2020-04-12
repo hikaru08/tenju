@@ -1,7 +1,4 @@
 class Contact < ApplicationRecord
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :email, presence: true, format: { with: VALID_EMAIL_REGEX };
-
   validates :name_full,
     length: { minimum: 1, maximum: 10 };
   validates :name_cana,
@@ -9,7 +6,6 @@ class Contact < ApplicationRecord
   validates :phone,
   # phoneは数字のみ許可。ハイフンやカッコは認めない
   numericality: { only_integer: true};
-  validates :content, presence: true;
   validates :zip1, presence: true;
   validates :zip2, presence: true;
   validates :address1, presence: true;

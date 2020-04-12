@@ -50,9 +50,15 @@
           border: 1px solid lightgray;
           width: 100%;
         }
-        .postcode-box{
-          height: 2.5rem;
-          width: 5.5rem;
+        &__post{
+          display: flex;
+          span{
+            margin: 0.5rem;
+          }
+          .postcode-box{
+            height: 2.5rem;
+            width: 5.5rem;
+          }
         }
         .select-box::before{
           position: absolute;
@@ -116,6 +122,8 @@
       text-align: center;
     }
     &__button{
+      display: flex;
+      justify-content: center;
       text-align: center;
       margin-top: 1rem;
       .submit-btn:hover, .btn-primary:hover{
@@ -129,6 +137,7 @@
         color: darkorange;
       }
       .submit-btn , .btn-primary{
+        margin: 1rem;
         font-size: 1.2rem;
         font-weight: bold;
         text-align: center;
@@ -145,6 +154,19 @@
 .info-discription{
   margin-top: 1rem;
   text-align: center;
+}
+.info-error{
+  margin-top: 1.5rem;
+  color: red;
+  .error{
+    ul{
+      padding: 0;
+      margin: 0;
+      li{
+        text-align: center;
+      }
+    }
+  }
 }
 @media screen and (max-width:1023px){
   .info{

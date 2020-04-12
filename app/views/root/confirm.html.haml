@@ -1,6 +1,20 @@
 :javascript
   window.onload = addToNewUrl();
 
+.service_main
+  .service_main__photo
+    = image_tag "info_image.jpg", alt:"花の写真"
+    .service_main__photo__title
+      %span ご相談・お見積り
+    - breadcrumb :info
+    = render 'share/breadcrumb'
+
+.service_contents
+  .service_contents__title
+    %span 入力内容の確認
+  .info-discription
+    %span 下記の内容でよろしければ『送信する』を、内容に間違いがある場合は『修正する』を押してください。
+
 .service_contents#confirm
   = form_for @contact, url:root_thanks_path do |f|
     .info__title
@@ -39,17 +53,18 @@
           %span 現地ご住所
           %span.must 必須
         .info__form__address__content
-          〒
-          = f.hidden_field :zip1, class: "form-box postcode-box"
-          = @contact.zip1
-          ー
-          = f.hidden_field :zip2, class: "form-box postcode-box"
-          = @contact.zip2
-          = f.hidden_field :address1,class: "form-box prefecture-box"
-          = @contact.address1
+          .info__form__address__content__post
+            〒
+            = f.hidden_field :zip1, class: "form-box postcode-box"
+            = @contact.zip1
+            ー
+            = f.hidden_field :zip2, class: "form-box postcode-box"
+            = @contact.zip2
+          .select-box
+            = f.hidden_field :address1,class: "form-box prefecture-box"
+            = @contact.address1
           = f.hidden_field :address2, class: "form-box city-box"
           = @contact.address2
-          %br
           = f.hidden_field :address3, class: "form-box address-box"
           = @contact.address3
       .info__form__detail
@@ -62,7 +77,5 @@
             = @contact.content
     .info__submit
       .info__submit__button
+        = f.submit "修正する", class: "btn btn-primary",name:'back'
         = f.submit "送信する", class: "btn btn-primary",name:'send'
-    .info__submit
-      .info__submit__button
-        = f.submit "戻る", class: "btn btn-primary",name:'back'

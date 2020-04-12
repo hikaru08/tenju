@@ -6,6 +6,8 @@
     = image_tag "info_image.jpg", alt:"花の写真"
     .service_main__photo__title
       %span ご相談・お見積もり
+    - breadcrumb :info
+    = render 'share/breadcrumb'
 
 .service_contents
   .service_contents__title
@@ -56,14 +58,14 @@
           %span 現地ご住所
           %span.must 必須
         .info__form__address__content
-          〒
-          = f.text_field :zip1, class: "form-box postcode-box"
-          ー
-          = f.text_field :zip2, onKeyUp: "AjaxZip3.zip2addr('contact[zip1]', 'contact[zip2]', 'contact[address1]', 'contact[address2]');", class: "form-box postcode-box"
+          .info__form__address__content__post
+            %span 〒
+            = f.text_field :zip1, class: "form-box postcode-box"
+            %span ー
+            = f.text_field :zip2, onKeyUp: "AjaxZip3.zip2addr('contact[zip1]', 'contact[zip2]', 'contact[address1]', 'contact[address2]');", class: "form-box postcode-box"
           .select-box
             = f.select :address1, options_for_select(Contact.addresses), {},{class: "form-box prefecture-box"}
           = f.text_field :address2, placeholder: "市区町村", class: "form-box city-box"
-          %br
           = f.text_field :address3, placeholder: "番地・建物名", class: "form-box address-box"
       .info__form__detail
         .info__form__detail__title

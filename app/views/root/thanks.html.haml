@@ -3,5 +3,14 @@
 
 .service_main
   .service_main__photo
-    .service_main__photo__title#thanks
-      %span お問い合わせありがとうございました。当社スタッフより原則2営業日以内にお返事いたします。
+    = image_tag "info_image.jpg", alt:"花の写真"
+    .service_main__photo__title
+      %span ご相談・お見積もり
+    - breadcrumb :info
+    = render 'share/breadcrumb'
+
+.service_contents
+  .service_contents__title
+    %span 送信完了
+  .info-discription
+    %span お問い合わせいただき誠にありがとうございます。当社スタッフより原則２営業日内にお返事をさせていただきますので、今しばらくお待ちください。
