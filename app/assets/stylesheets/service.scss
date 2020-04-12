@@ -23,6 +23,10 @@
       font-size: 2rem;
       font-weight: bold;
     }
+    // お問い合わせview修正
+    &__title#thanks {
+      width: 100%;
+    }
   }
 }
 .service_contents {

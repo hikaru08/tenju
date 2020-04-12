@@ -29,12 +29,19 @@ class RootController < ApplicationController
   end
  
   def thanks
-    # メール送信
-    @contact = Contact.new(contact_params)
-    ContactMailer.received_email(@contact).deliver
- 
-    # 完了画面を表示
-    render :action => 'thanks'
+    
+    if params[:send]      
+      # 送信が押されれば完了画面
+      # メール送信
+      @contact = Contact.new(contact_params)
+      ContactMailer.received_email(@contact).deliver
+      
+      render action: 'thanks'
+    elsif params[:back]
+      # 戻る画面が押されれば入力画面
+      @contact = Contact.new(contact_params)
+      render action: 'info'
+    end
   end
   def plan
   end
