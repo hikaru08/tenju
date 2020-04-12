@@ -29,11 +29,13 @@ class RootController < ApplicationController
   end
  
   def thanks
+    
     if params[:send]      
+      # 送信が押されれば完了画面
       # メール送信
       @contact = Contact.new(contact_params)
       ContactMailer.received_email(@contact).deliver
-      # 送信が押されれば完了画面
+      
       render action: 'thanks'
     elsif params[:back]
       # 戻る画面が押されれば入力画面

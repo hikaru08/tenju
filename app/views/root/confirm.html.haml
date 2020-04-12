@@ -1,36 +1,3 @@
--# .confirm-main
--#   .confirm-main__center
--#     = form_for @contact, url:root_thanks_path do |f|
--#       %table.table
--#         %tr
--#           %th 名前
--#           %td
--#             = f.hidden_field :name_full
--#             = @contact.name_full
--#         %tr
--#           %th メールアドレス
--#           %td
--#             = f.hidden_field :email
--#             = @contact.email
--#         %tr
--#           %th 住所
--#           %td
--#             = f.hidden_field :zip1
--#             = @contact.zip1
--#             = f.hidden_field :zip2
--#             = @contact.zip2
--#             = f.hidden_field :address1
--#             = @contact.address1
--#             = f.hidden_field :address2
--#             = @contact.address2
--#             = f.hidden_field :address3
--#             = @contact.address3
--#         %tr
--#           %th お問い合わせ内容
--#           %td
--#             = f.hidden_field :content
--#             = simple_format(@contact.content)
--#       = f.submit '送信', :class => 'btn btn-primary'
 .service_contents#confirm
   = form_for @contact, url:root_thanks_path do |f|
     .info__title
@@ -96,14 +63,3 @@
     .info__submit
       .info__submit__button
         = f.submit "戻る", class: "btn btn-primary",name:'back'
-      -# = form_for @contact, url:root_info_path do |f|
-      -#   = f.hidden_field :name_full
-      -#   = f.hidden_field :name_cana
-      -#   = f.hidden_field :phone
-      -#   = f.hidden_field :zip1
-      -#   = f.hidden_field :zip2
-      -#   = f.hidden_field :address1
-      -#   = f.hidden_field :address2
-      -#   = f.hidden_field :address3
-      -#   = f.hidden_field :conten
-        
