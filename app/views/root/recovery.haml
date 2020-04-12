@@ -46,6 +46,20 @@
 
 .service_contents
   .service_contents__title
+    %span 遺品のご供養
+  .service_contents__container
+    .service_contents__container__photo
+      =image_tag "temple.jpg"
+    .service_contents__container__textbox
+      .service_contents__container__textbox__title
+        %span 泉明院(明星輪寺)
+      .service_contents__container__textbox__description
+      .service_contents__fee
+      .plan__contents__body__reference.inner
+        = render 'share/fee/temple-fee'
+
+.service_contents
+  .service_contents__title
     %span 特殊清掃について
   .service_contents__container
     .service_contents__container__photo
