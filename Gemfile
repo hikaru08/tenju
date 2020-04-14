@@ -83,4 +83,4 @@ gem 'dotenv-rails'
 gem 'recaptcha', require: "recaptcha/rails"
 gem 'rails-i18n'
 gem 'google-analytics-rails'
-
+gem 'meta-tags'
