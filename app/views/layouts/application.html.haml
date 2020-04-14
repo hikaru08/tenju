@@ -2,15 +2,13 @@
 %html
   %head
     = analytics_init if Rails.env.production?
+    = display_meta_tags(default_meta_tags)
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "width=device-width", :name => "viewport"}/
-    %meta{name: "description", content: "滋賀の遺品整理・生前整理なら『天授』にお任せください。"}
-    %title 滋賀の遺品整理・生前整理なら『天授』
     = csrf_meta_tags
     = csp_meta_tag
     %script{ charset: 'UTF-8', src: 'https://ajaxzip3.github.io/ajaxzip3.js'}
     %link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700")/
-    %meta{content: "width=device-width,initial-scale=1.0", name: "viewport"}/
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = favicon_link_tag
