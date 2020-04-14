@@ -11,7 +11,7 @@ module ApplicationHelper
       separator: '|',
       icon: [
         { href: image_url('favicon.ico') },
-        { href: image_url('square.png'), rel: 'apple-touch-icon-precomposed', sizes: '180x180', type: 'image/png' },
+        { href: image_url('square.png'), rel: 'apple-touch-icon', sizes: '180x180', type: 'image/png' },
       ],
       og: {
         site_name: '株式会社天授',
