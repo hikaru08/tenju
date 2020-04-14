@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   get 'root/cleaning', to: 'root#cleaning'
   get 'root/performance', to: 'root#performance'
   get 'root/info', to: 'root#info'
-  post 'root/confirm' ,to: 'root#confirm'   # 確認画面
-  post 'root/thanks',to: 'root#thanks'     # 送信完了画面
+  post 'root/confirm' ,to: 'root#confirm'
+  post 'root/thanks',to: 'root#thanks'
   get 'root/plan', to: 'root#plan'
+  get '*not_found', to: 'application#routing_error'
+  post '*not_found', to: 'application#routing_error'
 end
