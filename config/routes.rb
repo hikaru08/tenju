@@ -9,6 +9,4 @@ Rails.application.routes.draw do
   post 'root/confirm' ,to: 'root#confirm'
   post 'root/thanks',to: 'root#thanks'
   get 'root/plan', to: 'root#plan'
-  get '*not_found', to: 'application#routing_error'
-  post '*not_found', to: 'application#routing_error'
 end
