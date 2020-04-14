@@ -78,4 +78,4 @@
     .info__submit
       .info__submit__button
         = f.submit "修正する", class: "btn btn-primary",name:'back'
-        = f.submit "送信する", class: "btn btn-primary",name:'send'
+        = f.submit "送信する", class: "btn btn-primary",name:'send', data: { confirm: 'メッセージを送信してよろしいですか。' }
