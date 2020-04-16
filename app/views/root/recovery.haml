@@ -40,6 +40,18 @@
   .service_contents__fee
     .plan__contents__body__reference.inner
       = render 'share/fee/pack-fee'
+  
+  .index
+    .index__container
+      .index__container__pick-up
+        .index__container__pick-up__content.message-box
+          = image_tag 'team.jpg', alt: 'チーム'
+          .index__container__pick-up__content__right
+            .index__container__pick-up__content__right__box
+              %p.title.message-title
+                葬儀・不動産関連会社様へ
+              %span.message-content
+                精神的に辛く悲しんでおられるご遺族様の負担を少しでも軽減できますよう、遺品整理・特殊清掃など必要な業務のご相談を承っております。ぜひお問い合わせください。
 -#   .service_contents__title
 -#     %span 参考事例
 -# = render 'share/case/case-recovery'

@@ -72,6 +72,21 @@
     .plan__contents__body__reference.inner
       %h3 簡易代行の参考価格
       = render 'share/fee/lifesupport-fee'
+  
+  .index
+    .index__container
+      .index__container__pick-up
+        .index__container__pick-up__content.message-box
+          = image_tag 'care.jpg', alt: 'カウンセラー'
+          .index__container__pick-up__content__right
+            .index__container__pick-up__content__right__box
+              %p.title.message-title
+                ケアマネージャー
+                %br
+                病院・福祉施設関係者様へ
+              %span.message-content
+                身寄りのない方、独居生活をされている高齢者様・患者様の介護施設等へのお引越し、代行業務などのご相談を承っております。生活保護受給者の方へのご対応もさせていただいております。お気軽にお問い合わせください。
+
 -#   .service_contents__title
 -#     %span 参考事例
 -# = render 'share/case/case-lifesupport'

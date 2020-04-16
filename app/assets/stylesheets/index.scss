@@ -72,6 +72,13 @@
               color: darkorange;
               border-radius: 1.5rem;
             }
+            .message-content{
+              padding: 1.5rem;
+              color: #545454;
+            }
+            .message-content:hover{
+              color: #545454;
+            } 
           }
         }
       }
@@ -259,9 +266,17 @@
 
 /*レスポンシブデザイン*/
 @media screen and (min-width:1024px) {
-  .index__container__pick-up__content__right__box{
-    .title{
-      font-size: 1.5rem;
+  .index__container__pick-up__content__right{
+    position: relative;
+    &__box{ 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      .title{
+        font-size: 1.5rem;
+      }
     }
   }
   .index__container__image__info-box{
@@ -275,6 +290,22 @@
 @media screen and (max-width:1023px) {
   .index{
     &__container{
+      &__pick-up{
+        padding: 1.5rem;
+        &__content{
+          display: block;
+          padding: 1rem;
+          img{
+            width: 100%;
+          }
+          &__right{
+            margin: 1rem 0 0 0;
+            .title{
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
       &__image{
         &__text-zone{
           &__catch{
@@ -334,35 +365,9 @@
   }
 }
 @media screen and (min-width:768px){
-  .index__container__pick-up__content__right{
-    position: relative;
-    &__box{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      -webkit-transform: translateY(-50%) translateX(-50%);
-    }
-  }
 }
 @media screen and (max-width:768px) {
   .index__container{
-    &__pick-up{
-      padding: 1.5rem;
-      &__content{
-        display: block;
-        padding: 1rem;
-        img{
-          width: 100%;
-        }
-        &__right{
-          margin: 1rem 0 0 0;
-          .title{
-            margin-bottom: 1rem;
-          }
-        }
-      }
-    }
     &__step, &__solve, &__service, &__worries{
       &__content{
         &__up, &__down{
@@ -401,6 +406,14 @@
 
 @media screen and (max-width:639px) {
   .index__container{
+    &__pick-up{
+      .message-title{
+        font-size: 1rem;
+      }
+      .message-content{
+        font-size: 0.8rem;
+      }
+    }
     &__image{
       &__info-box{
         padding: 0.5rem 1.5rem 1rem 1.5rem;
