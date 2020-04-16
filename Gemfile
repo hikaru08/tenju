@@ -85,3 +85,4 @@ gem 'rails-i18n'
 gem 'google-analytics-rails'
 gem 'meta-tags'
 gem 'sitemap_generator'
+gem 'whenever', require: false

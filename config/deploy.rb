@@ -34,14 +34,24 @@ namespace :deploy do
     invoke 'unicorn:start'
   end
   desc 'upload master.key'
- task :upload do
-   on roles(:app) do |host|
-     if test "[ ! -d #{shared_path}/config ]"
-       execute "mkdir -p #{shared_path}/config"
-     end
-     upload!('config/master.key', "#{shared_path}/config/master.key")
-   end
- end
- before :starting, 'deploy:upload'
- after :finishing, 'deploy:cleanup'
+  task :upload do
+    on roles(:app) do |host|
+      if test "[ ! -d #{shared_path}/config ]"
+        execute "mkdir -p #{shared_path}/config"
+      end
+      upload!('config/master.key', "#{shared_path}/config/master.key")
+    end
+  end
+  before :starting, 'deploy:upload'
+  after :finishing, 'deploy:cleanup'
 end
+
+desc 'Generate sitemap'
+  task :sitemap do
+    on roles(:app) do
+      within release_path do
+        execute :bundle, :exec, :rake, 'sitemap:create RAILS_ENV=production'
+      end
+    end
+  end
+after  'deploy:restart', 'deploy:sitemap'
