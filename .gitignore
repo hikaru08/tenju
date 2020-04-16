@@ -29,4 +29,5 @@
 
 # Ignore sitemap file
 public/sitemap.xml.gz
+public/sitemap.xml
 
