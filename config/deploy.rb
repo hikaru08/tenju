@@ -27,7 +27,7 @@ set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 set :keep_releases, 5
 
 # デプロイ処理が終わった後、Unicornを再起動するための記述
-after 'deploy:publishing', 'deploy:restart'
+after 'deploy:publishing', 'deploy:restart', 'deploy:sitemap'
 namespace :deploy do
   task :restart do
     invoke 'unicorn:stop'
@@ -44,9 +44,8 @@ namespace :deploy do
   end
   before :starting, 'deploy:upload'
   after :finishing, 'deploy:cleanup'
-end
-
-desc 'Generate sitemap'
+  
+  desc 'Generate sitemap'
   task :sitemap do
     on roles(:app) do
       within release_path do
@@ -54,4 +53,5 @@ desc 'Generate sitemap'
       end
     end
   end
-after  'deploy:restart', 'deploy:sitemap'
+end
+
