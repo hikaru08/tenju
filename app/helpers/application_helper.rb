@@ -6,7 +6,7 @@ module ApplicationHelper
       reverse: true,
       charset: 'utf-8',
       description: '住空間の整理サービスなら『天授』にお任せください。遺品整理・生前整理から不用品回収まで幅広いサービスを承っております。ただ物を整理するのが私たちの仕事ではありません。お客様の心を前向きにするお手伝いをさせていただきます。',
-      keywords: '遺品整理, 滋賀, 彦根',
+      keywords: '遺品整理, 滋賀 遺品整理, 彦根 遺品整理',
       canonical: 'https://tenju.net',
       separator: '|',
       icon: [
