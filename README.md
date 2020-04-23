@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- 株式会社tenju様より受注し、制作いたしました。
+- 背景としては、クライアントはホームページを所有しておらず、顧客の信頼、認知度の向上に繋げるために作成を希望されました。
 
-Things you may want to cover:
+## アプリケーション概要
 
-* Ruby version
+- 株式会社tenju様の静的なホームページ
 
-* System dependencies
 
-* Configuration
+## アプリケーションの機能一覧
 
-* Database creation
+- パンくず表示機能
+- お問い合わせ機能
+- レスポンシブ対応
 
-* Database initialization
+## アプリケーション内で使用している技術一覧
+|種別|名称|
+|------|----|
+|開発言語|Ruby(ver 2.5.1)|
+|フレームワーク|Ruby on Rails(ver 5.0.7.2)|
+|マークアップ|HTML(Haml),CSS(Sass)|
+|フロントエンド|JavaScript(jQuery)|
+|DB|MySQL|
+|本番環境|AWS|
+|自動デプロイ|capistrano|
+|パンくず表示機能|gretel|
+|お問い合わせ機能|rails-i18n|
 
-* How to run the test suite
+## データベース
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- 静的なページのため、なし
