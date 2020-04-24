@@ -19,7 +19,7 @@ end
 
 # performance
 crumb :performance do
-  link "お客様の声", "root/performance"
+  link "作業事例", "root/performance"
 end
 
 # recovery
