@@ -35,7 +35,7 @@
 |PC用|スマートフォン用|
 |---|---|
 |ホーム画面|
-![1 ホーム](https://user-images.githubusercontent.com/54468465/80168623-4b60d700-861e-11ea-90b2-d256cc62913e.png)![1](https://user-images.githubusercontent.com/54468465/80169542-b7dcd580-8620-11ea-88de-7e396fd285a3.png)
+|![1 ホーム](https://user-images.githubusercontent.com/54468465/80168623-4b60d700-861e-11ea-90b2-d256cc62913e.png)!|[1](https://user-images.githubusercontent.com/54468465/80169542-b7dcd580-8620-11ea-88de-7e396fd285a3.png)|
 |遺品整理|
 ![2 遺品](https://user-images.githubusercontent.com/54468465/80169087-81528b00-861f-11ea-857d-609ac57e4496.png)
 |家財整理|
